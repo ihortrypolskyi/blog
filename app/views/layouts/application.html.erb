@@ -11,12 +11,14 @@
   <body>
 
   <div class="header">
-      <div class="container">	
+    <div class="container">	
 
    <div class="nav pull-right">
-          <% if current_user %> 
-  <ul> 
-    <li><%= current_user.email %></li> 
+   
+  <% if current_user %> 
+  <ul>
+    <li><%= link_to "Home", '/' %></a></li>
+    <li><%= current_user.first_name %> <%= current_user.last_name %></li> 
     <li><%= link_to "Log out", logout_path, method: "delete" %></li> 
   </ul> 
 <% else %> 
@@ -25,9 +27,9 @@
     <li><%= link_to "Signup", 'signup' %></a></li> 
   </ul> 
 <% end %>
-        </div>
       </div>
     </div>
+   </div>
 
     <%= yield %>
   </body>

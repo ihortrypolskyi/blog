@@ -2,13 +2,18 @@
 	<div class="container">
 		<div class="form">
 
-      <h1>Log in</h1>
+      <h1>Wellcome to the best blog ever!</h1>
+      <h2>Sign in, please.</h2>
 			
 			<%= form_for(:session, url: login_path) do |f| %> 
 			  <%= f.email_field :email, :placeholder => "Email" %> 
 			  <%= f.password_field :password, :placeholder => "Password" %> 
 			  <%= f.submit "Log in", class: "btn-submit" %>
 			<% end %>
+
+			<br>
+		    <%= link_to 'Need to sign up?', 'signup' %>
+		    
 		
     </div>
 	</div>
