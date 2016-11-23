@@ -9,28 +9,25 @@
   </head>
 
   <body>
-
-  <div class="header">
-    <div class="container">	
-
-   <div class="nav pull-right">
-   
-  <% if current_user %> 
-  <ul>
-    <li><%= link_to "Home", '/' %></a></li>
-    <li><%= current_user.first_name %> <%= current_user.last_name %></li> 
-    <li><%= link_to "Log out", logout_path, method: "delete" %></li> 
-  </ul> 
-<% else %> 
-  <ul> 
-    <li><%= link_to "Login", 'login' %></a></li> 
-    <li><%= link_to "Signup", 'signup' %></a></li> 
-  </ul> 
-<% end %>
+    <div class="container">
+      <div class="header">
+        <nav>     
+          <% if current_user %> 
+            <ul class = "top-menu">
+              <li><a><%= link_to 'New Post', new_post_path %></a></li>
+              <li><a><%= link_to "All posts", '/' %></a></li>
+              <li><a><%= link_to "Log out", logout_path, method: "delete" %></li>
+              <li><a><%= current_user.first_name %> <%= current_user.last_name %></li>               
+            </ul> 
+          <% else %> 
+            <ul> 
+              <li><a><%= link_to "Login", 'login' %></a></li> 
+              <li><a><%= link_to "Signup", 'signup' %></a></li> 
+            </ul> 
+          <% end %>
+        </nav>
       </div>
     </div>
-   </div>
-
-    <%= yield %>
+      <%= yield %>
   </body>
 </html>

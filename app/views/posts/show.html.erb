@@ -1,24 +1,25 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @post.title %>
-</p>
+<div id="heading">
+  <h1>Closer look at the post</h1>
+</div>
 
-<p>
-  <strong>Content:</strong>
-  <%= @post.body %>
-</p>
-
-<p>
-  <strong>User:</strong>
-  <%= @post.user.first_name %>
-  <%= @post.user.last_name %>
-</p>
-
-
-<% if @post.user.id == current_user.id %> 
-  <%= link_to 'Edit', edit_post_path(@post) %> | 
-<% end %>
-
-<%= link_to 'Back', posts_path %>
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Content</th>
+    </tr>
+  </thead>
+  <tbody>
+     <tr>
+        <td id="post_title"><%= @post.title %></td>
+        <td id="post_body"><%= @post.body %></td>
+        <nav><td><%= link_to 'All posts', posts_path %></td>
+        <% if @post.user.id == current_user.id %> 		
+ 		<td><%= link_to 'Edit', edit_post_path(@post) %></td> 
+		<% end %>
+		</nav>			 
+     </tr>
+  </tbody>
+</table>
