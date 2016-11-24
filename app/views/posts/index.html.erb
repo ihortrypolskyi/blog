@@ -2,7 +2,7 @@
 
 <div id="heading">
   <h1>Posts list</h1>
-  
+    
 </div>
 
 <table>
@@ -21,10 +21,10 @@
         <td id="table_title"><%= post.title %></td>
         <td id="table_body"><%= post.body %></td>
         <td id="table_user"><%= post.user.first_name %> <%= post.user.last_name %></td>
-        <nav><td ><%= link_to 'Show', post %></td>
+        <nav><td ><%= link_to 'Show', post_path(post) %></td>
         <% if post.user.id == current_user.id %> 
         <td><%= link_to 'Edit', edit_post_path(post) %></td>
-        <td><%= link_to 'Delete', post, method: :delete, data: { confirm: 'Are you sure?' } %></td></nav>
+        <td><%= link_to 'Delete', post_path(post), method: :delete, data: { confirm: 'Are you sure?' } %></td></nav>
           <% end %>
       </tr>
     <% end %>

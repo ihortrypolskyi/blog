@@ -17,7 +17,7 @@
         <td id="post_body"><%= @post.body %></td>
         <nav><td><%= link_to 'All posts', posts_path %></td>
         <% if @post.user.id == current_user.id %> 		
- 		<td><%= link_to 'Edit', edit_post_path(@post) %></td> 
+ 		<td><%= link_to 'Edit', edit_post_path %></td> 
 		<% end %>
 		</nav>			 
      </tr>
