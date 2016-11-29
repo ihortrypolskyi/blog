@@ -1,9 +1,10 @@
+<p id="notice"><%= notice %></p>
 <div class="login">
 	<div class="container">
 		<div class="form">
 			<h1>Wellcome to the blog!</h1>
-    				<%= form_for(:session, url: login_path) do |f| %> 
-							<%= f.email_field :email, :placeholder => "Email" %><br>
+    				<%= form_for(:session, url: login_path) do |f| %>
+           		<%= f.email_field :email, :placeholder => "Email" %><br>
 							<%= f.password_field :password, :placeholder => "Password" %><br>
 							<%= f.submit "Log in", class: "btn-submit" %>
 				<% end %><br>
@@ -11,3 +12,7 @@
     	</div>
 	</div>
 </div>
+
+<% if flash[:alert] %>
+    <div id="error_explanation"><%= flash[:alert] %></div>
+<% end %>

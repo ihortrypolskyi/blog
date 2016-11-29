@@ -4,6 +4,8 @@ class PostsController < ApplicationController
 
   before_action :set_post, only: [:show, :edit, :update, :destroy]
 
+  before_action :update_views
+
   # GET /posts
   # GET /posts.json
   def index
@@ -13,6 +15,12 @@ class PostsController < ApplicationController
   # GET /posts/1
   # GET /posts/1.json
   def show
+    @post = Post.find(params[:id])
+    #respond_to do |format|
+    #  format.json { render json: @post.to_json }
+    #  format.html
+   # end
+    #render json: {error: 'error_msg'}, status: :forbidden
   end
 
   # GET /posts/new
@@ -74,5 +82,16 @@ class PostsController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def post_params
       params.require(:post).permit(:title, :body)
+    end
+
+    def update_views
+      if cookies[:views].present?
+        cookies[:views] = cookies[:views].to_i + 1
+      else
+        cookies[:views] = 1
+      end
+      if cookies[:views] % 10 == 0
+        flash.now[:notice] = 'Study ROR with GeekHub!!!'
+      end
     end
 end
