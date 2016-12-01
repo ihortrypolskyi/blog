@@ -182,17 +182,27 @@ label {
 }
 
 #post_body, #post_title, #post_user {
-  border-style: solid;
-  border-color: #8b7d6b;
-  border-width: 1px;
-  border-radius: 5px;
+  border: {
+    style: solid;
+    color: #8b7d6b;
+    width: 1px;
+    radius: 5px;
+  }
+  &:hover {
+    border-color: #9c413a;
+  }
 }
 
 #table_body, #table_title, #table_user {
-  border-style: solid;
-  border-color: #8b7d6b;
-  border-width: 1px;
-  border-radius: 5px;
+  border: {
+    style: solid;
+    color: #8b7d6b;
+    width: 1px;
+    radius: 5px;
+  }
+  &:hover {
+    border-color: #9c413a;
+  }
 }
 
 p {
