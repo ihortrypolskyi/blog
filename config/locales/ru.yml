@@ -1,0 +1,85 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+
+ru:
+  Ru: 'Рус'
+  New post: 'Создать пост'
+  All posts: 'Все посты'
+  Log out: 'Выйти'
+  Login: 'Войти'
+  Signup: 'Создать аккаунт'
+
+  Create a New Post: 'Создайте новый пост'
+  submit: 'Создать'
+  Back: 'Назад'
+
+  Edit Your Post: 'Обновиете Ваш пост'
+
+  Closer look at the post: 'Подробно про пост '
+
+  posts_list: 'Список постов'
+  title: 'Заголовок'
+  content: 'Содержание'
+  user: 'Автор'
+  show: 'Просмотр'
+  edit: 'Обновить'
+  delete: 'Удалить'
+  post_created: 'создан:'
+  new_post: 'Создать пост'
+
+  first_name: 'имя'
+  last_name: 'фамилия'
+  email: 'емейл'
+  password: 'пароль'
+  create_an_account: 'создать аккаунт'
+  Fill in the form: 'Заполните форму'
+
+  Welcome to the blog!: 'Добро пожаловать в блог!'
+  Log in: 'Войти'
+  Haven't got account?: 'У меня нет аккаунта'
+
+
+  posts:
+      create:
+          notice: 'Ваш пост был создан.'
+      update:
+          notice: 'Ваш пост был обновлен.'
+      destroy:
+          notice: 'Ваш пост был удален.'
+
+  Study ROR with GeekHub!!!: 'Учите ROR вместе с GeekHub!!!'
+
+  users:
+       create:
+           alert: 'Параметры полей: имя и фамилия от 2 до 20 символов, пароль от 6 до 20 символов.'
+
+  sessions:
+       create:
+           alert: 'Аккаунта с указанными емейлом и паролем не существует.'
+       destroy:
+           notice: 'Вы успешно вышли из аккаунта'
+
+
+
+
+
+

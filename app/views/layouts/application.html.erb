@@ -14,15 +14,19 @@
         <nav><%= image_tag('logog.png') %>
           <% if current_user %>
             <ul class = "top-menu">
-              <li><a><%= link_to 'New Post', new_post_path %></a></li>
-              <li><a><%= link_to "All posts", '/' %></a></li>
-              <li><a><%= link_to "Log out", logout_path, method: "delete" %></li>
+              <li><a><%= link_to 'En', en_path, locale: 'en' %></a></li>|
+              <li><a><%= link_to t("Ru"), ru_path, locale: 'ru' %></a></li>
+              <li><a><%= link_to t("New post"), new_post_path %></a></li>
+              <li><a><%= link_to t("All posts"), '/' %></a></li>
+              <li><a><%= link_to t("Log out"), logout_path, method: "delete" %></li>
               <li><a><%= current_user.first_name %> <%= current_user.last_name %></li>               
             </ul> 
           <% else %> 
             <ul>
-              <li><a><%= link_to "Login", 'login' %></a></li> 
-              <li><a><%= link_to "Signup", 'signup' %></a></li> 
+              <li><a><%= link_to t("En"), en_path, locale: 'en' %></a></li>|
+              <li><a><%= link_to t("Ru"), ru_path, locale: 'ru' %></a></li>
+              <li><a><%= link_to t("Login"), 'login' %></a></li>
+              <li><a><%= link_to t("Signup"), 'signup' %></a></li>
             </ul> 
           <% end %>
         </nav>

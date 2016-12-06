@@ -1,25 +1,30 @@
-  <p id="notice"><%= notice %></p>
+        <p id="notice"><%= notice %></p>
 
 <div id="heading">
-  <h1>Closer look at the post</h1>
+  <h1><%= t("Closer look at the post") %></h1>
 </div>
 
 <table>
   <thead>
     <tr>
-      <th>Title</th>
-      <th>Content</th>
+      <th><%= t("title") %></th>
+      <th><%= t("content") %></th>
     </tr>
   </thead>
   <tbody>
      <tr>
         <td id="post_title"><%= @post.title %></td>
         <td id="post_body"><%= @post.body %></td>
-        <nav><td><%= link_to 'All posts', posts_path %></td>
+
+        <nav><td><%= link_to t("All posts"), posts_path %></td>
         <% if @post.user.id == current_user.id %> 		
- 		<td><%= link_to 'Edit', edit_post_path %></td> 
+ 		<td><%= link_to t("edit"), edit_post_path %></td>
 		<% end %>
-		</nav>			 
+		</nav>
+     </tr>
+     <tr>
+       <th class='post_created' ><%= t("post_created") %></th>
+       <td id="post_created"><%= l @post.created_at, format: :long %></td>
      </tr>
   </tbody>
 </table>

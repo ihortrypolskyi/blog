@@ -8,9 +8,8 @@ class UsersController < ApplicationController
     if @user.save
       session[:user_id] = @user.id
       redirect_to '/posts'
-
     else
-      flash[:alert] = "Fill in form requirements : first & last name length 2-20, password length min. 6"
+      flash[:alert] = t('.alert')
       redirect_to '/signup'
 
     end

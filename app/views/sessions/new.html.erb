@@ -2,17 +2,17 @@
 <div class="login">
 	<div class="container">
 		<div class="form">
-			<h1>Wellcome to the blog!</h1>
+			<h1><%= t('Welcome to the blog!') %></h1>
     				<%= form_for(:session, url: login_path) do |f| %>
-           		<%= f.email_field :email, :placeholder => "Email" %><br>
-							<%= f.password_field :password, :placeholder => "Password" %><br>
-							<%= f.submit "Log in", class: "btn-submit" %>
+           		<%= f.email_field :email, :placeholder => t('email') %><br>
+							<%= f.password_field :password, :placeholder => t('password') %><br>
+							<%= f.submit t('Log in'), class: "btn-submit" %>
 				<% end %><br>
-				<nav><%= link_to "Haven't got account?", 'signup' %></nav>	
+				<nav><%= link_to t("Haven't got account?"), 'signup' %></nav>
     	</div>
 	</div>
 </div>
 
 <% if flash[:alert] %>
-    <div id="error_explanation"><%= flash[:alert] %></div>
+    <div id="error_explanation"><%= alert %></div>
 <% end %>

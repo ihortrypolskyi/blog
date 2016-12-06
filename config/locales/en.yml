@@ -20,4 +20,58 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  Ru: 'Ru'
+  New post: 'New post'
+  All posts: 'All posts'
+  Log out: 'Log out'
+  Login: 'Login'
+  Signup: 'Sign up'
+
+  Create a New Post: 'Create a new post'
+  submit: 'Submit'
+  Back: 'Back'
+
+  Edit Your Post: 'Edit Your Post'
+
+  Closer look at the post: 'Closer look at the post'
+
+  posts_list: 'Posts list'
+  title: 'Title'
+  content: 'Content'
+  user: 'Author'
+  show: 'Show'
+  edit: 'Edit'
+  delete: 'Delete'
+  post_created: 'post created:'
+  new_post: 'New post'
+
+  first_name: 'first name'
+  last_name: 'last name'
+  email: 'email'
+  password: 'password'
+  create_an_account: 'create an account'
+  Fill in the form: 'Fill in the form'
+
+  Welcome to the blog!: 'Welcome to the blog!'
+  Log in: 'Log in'
+  Haven't got account?: "Haven't got account?"
+
+  posts:
+      create:
+          notice: 'Post was successfully created.'
+      update:
+          notice: 'Post was successfully updated.'
+      destroy:
+          notice: 'Post was successfully destroyed.'
+
+  Study ROR with GeekHub!!! : 'Study ROR with GeekHub!!!'
+
+  users:
+      create:
+          alert: 'Requirements: first & last name length 2-20 symbols, password length 6-20 symbols.'
+
+  sessions:
+      create:
+          alert: 'The account with specified email and password does not exist.'
+      destroy:
+          notice: 'You have successfully logged out'

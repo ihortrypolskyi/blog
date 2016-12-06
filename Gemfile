@@ -10,6 +10,7 @@ gem 'turbolinks',   '5.0.1'
 gem 'jbuilder',     '2.6.0'
 gem 'bcrypt',       '3.1.11'
 gem 'annotate',      '2.7.1'
+gem 'russian',       '0.6.0'
 
 
 group :development, :test do

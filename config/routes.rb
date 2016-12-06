@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   resources :posts
   root 'posts#index'
 
+  get 'en', to: 'application#locale_en'
+  get 'ru', to: 'application#locale_ru'
 
   get 'signup'  => 'users#new'
   resources :users

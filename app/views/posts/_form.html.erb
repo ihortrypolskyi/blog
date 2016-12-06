@@ -12,16 +12,16 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :title %>
+    <%= f.label t("title") %>
     <%= f.text_field :title %>
   </div>
 
   <div class="field">
-    <%= f.label :body %>
+    <%= f.label t("content") %>
     <%= f.text_area :body %>
   </div>
 
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit t("submit") %>
   </div>
 <% end %>
