@@ -1,5 +1,5 @@
 current directory: /home/igor/igor/blog/vendor/bundle/ruby/2.3.0/gems/debug_inspector-0.0.2/ext/debug_inspector
-/home/igor/.rvm/rubies/ruby-2.3.0/bin/ruby -r ./siteconf20161207-19478-1954awo.rb extconf.rb
+/home/igor/.rvm/rubies/ruby-2.3.0/bin/ruby -r ./siteconf20161207-15791-xvbgva.rb extconf.rb
 creating Makefile
 
 current directory: /home/igor/igor/blog/vendor/bundle/ruby/2.3.0/gems/debug_inspector-0.0.2/ext/debug_inspector
@@ -12,4 +12,4 @@ linking shared-object debug_inspector.so
 
 current directory: /home/igor/igor/blog/vendor/bundle/ruby/2.3.0/gems/debug_inspector-0.0.2/ext/debug_inspector
 make "DESTDIR=" install
-/usr/bin/install -m 0755 debug_inspector.so ./.gem.20161207-19478-1bkzj0o
+/usr/bin/install -m 0755 debug_inspector.so ./.gem.20161207-15791-1ynbd3j

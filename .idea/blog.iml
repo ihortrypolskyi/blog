@@ -420,6 +420,18 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
+      <library name="draper (vbundled(2.1.0), /home/igor/igor/blog/vendor/bundle/ruby/2.3.0/bundler/gems/draper-e816e0e5876b) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/bundler/gems/draper-e816e0e5876b/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/bundler/gems/draper-e816e0e5876b/gemfiles" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/bundler/gems/draper-e816e0e5876b/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/bundler/gems/draper-e816e0e5876b/gemfiles" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
       <library name="erubis (vbundled(2.7.0), /home/igor/igor/blog/vendor/bundle/ruby/2.3.0/gems/erubis-2.7.0) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/erubis-2.7.0/bin" />
@@ -1124,7 +1136,6 @@
       </library>
     </orderEntry>
     <orderEntry type="library" scope="PROVIDED" name="bundler (v1.13.6, RVM: ruby-2.3.0) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="draper (v2.1.0@e816e0, RVM: ruby-2.3.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="pg (v0.19.0, RVM: ruby-2.3.0) [gem]" level="application" />
   </component>
   <component name="RModuleSettingsStorage">

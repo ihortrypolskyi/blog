@@ -80,6 +80,11 @@ Rails.application.configure do
     logger.formatter = config.log_formatter
     config.logger = ActiveSupport::TaggedLogging.new(logger)
   end
+  #activeadmin needs this
+  config.action_mailer.default_url_options = { :host => 'https://enigmatic-lowlands-85008.herokuapp.com/admin   ' }
+
+  #activeadmin needs this to pre compile
+  #config.assets.precompile += %w[active_admin.css active_admin.js]
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false

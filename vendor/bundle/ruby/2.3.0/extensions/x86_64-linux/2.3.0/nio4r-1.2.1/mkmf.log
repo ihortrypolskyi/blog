@@ -47,7 +47,7 @@ checked program was:
 /* end */
 
 "gcc -o conftest -I/home/igor/.rvm/rubies/ruby-2.3.0/include/ruby-2.3.0/x86_64-linux -I/home/igor/.rvm/rubies/ruby-2.3.0/include/ruby-2.3.0/ruby/backward -I/home/igor/.rvm/rubies/ruby-2.3.0/include/ruby-2.3.0 -I.     -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wno-packed-bitfield-compat -Wno-maybe-uninitialized  -fPIC conftest.c  -L. -L/home/igor/.rvm/rubies/ruby-2.3.0/lib -Wl,-R/home/igor/.rvm/rubies/ruby-2.3.0/lib -L. -fstack-protector -rdynamic -Wl,-export-dynamic     -Wl,-rpath,'/../lib' -Wl,-R'/../lib' -lruby  -lpthread -lgmp -ldl -lcrypt -lm   -lc"
-/tmp/ccG11kF4.o: In function `t':
+/tmp/ccyTxiUg.o: In function `t':
 /home/igor/igor/blog/vendor/bundle/ruby/2.3.0/gems/nio4r-1.2.1/ext/nio4r/conftest.c:14: undefined reference to `rb_thread_blocking_region'
 collect2: error: ld returned 1 exit status
 checked program was:

@@ -1,5 +1,5 @@
 current directory: /home/igor/igor/blog/vendor/bundle/ruby/2.3.0/gems/nio4r-1.2.1/ext/nio4r
-/home/igor/.rvm/rubies/ruby-2.3.0/bin/ruby -r ./siteconf20161207-19049-1s751an.rb extconf.rb
+/home/igor/.rvm/rubies/ruby-2.3.0/bin/ruby -r ./siteconf20161207-15791-1cf0b0e.rb extconf.rb
 checking for unistd.h... yes
 checking for rb_thread_blocking_region()... no
 checking for rb_thread_call_without_gvl()... yes
@@ -402,4 +402,4 @@ linking shared-object nio4r_ext.so
 
 current directory: /home/igor/igor/blog/vendor/bundle/ruby/2.3.0/gems/nio4r-1.2.1/ext/nio4r
 make "DESTDIR=" install
-/usr/bin/install -m 0755 nio4r_ext.so ./.gem.20161207-19049-a1bmg7
+/usr/bin/install -m 0755 nio4r_ext.so ./.gem.20161207-15791-iouvdo

@@ -26,3 +26,6 @@
 ## Environment normalization:
 
 /vendor/bundle
+
+/public/uploads/*
+/bundle/*
