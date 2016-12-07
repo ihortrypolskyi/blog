@@ -81,7 +81,7 @@ Rails.application.configure do
     config.logger = ActiveSupport::TaggedLogging.new(logger)
   end
   #activeadmin needs this
-  config.action_mailer.default_url_options = { :host => 'https://enigmatic-lowlands-85008.herokuapp.com/admin   ' }
+  config.action_mailer.default_url_options = { :host => 'https://enigmatic-lowlands-85008.herokuapp.com' }
 
   #activeadmin needs this to pre compile
   #config.assets.precompile += %w[active_admin.css active_admin.js]

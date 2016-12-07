@@ -2,176 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0426546f-84f9-41d0-9b76-7b0ae0c76560" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/cache/draper-2.1.0.gem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/.rspec" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/.yardopts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/CHANGELOG.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/CONTRIBUTING.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/Gemfile" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/Guardfile" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/Rakefile" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/draper.gemspec" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/gemfiles/4.0.gemfile" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/gemfiles/4.1.gemfile" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/gemfiles/4.2.gemfile" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/lib/draper.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/lib/draper/automatic_delegation.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/lib/draper/collection_decorator.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/lib/draper/decoratable.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/lib/draper/decoratable/equality.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/lib/draper/decorated_association.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/lib/draper/decorates_assigned.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/lib/draper/decorator.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/lib/draper/delegation.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/lib/draper/factory.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/lib/draper/finders.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/lib/draper/helper_proxy.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/lib/draper/helper_support.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/lib/draper/lazy_helpers.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/lib/draper/railtie.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/lib/draper/tasks/test.rake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/lib/draper/test/devise_helper.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/lib/draper/test/minitest_integration.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/lib/draper/test/rspec_integration.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/lib/draper/test_case.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/lib/draper/undecorate.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/lib/draper/version.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/lib/draper/view_context.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/lib/draper/view_context/build_strategy.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/lib/draper/view_helpers.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/lib/generators/controller_override.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/lib/generators/mini_test/decorator_generator.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/lib/generators/mini_test/templates/decorator_spec.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/lib/generators/mini_test/templates/decorator_test.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/lib/generators/rails/decorator_generator.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/lib/generators/rails/templates/decorator.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/lib/generators/rspec/decorator_generator.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/lib/generators/rspec/templates/decorator_spec.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/lib/generators/test_unit/decorator_generator.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/lib/generators/test_unit/templates/decorator_test.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/draper/collection_decorator_spec.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/draper/decoratable/equality_spec.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/draper/decoratable_spec.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/draper/decorated_association_spec.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/draper/decorates_assigned_spec.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/draper/decorator_spec.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/draper/factory_spec.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/draper/finders_spec.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/draper/helper_proxy_spec.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/draper/lazy_helpers_spec.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/draper/undecorate_spec.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/draper/view_context/build_strategy_spec.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/draper/view_context_spec.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/draper/view_helpers_spec.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/dummy/.rspec" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/dummy/Rakefile" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/dummy/app/controllers/application_controller.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/dummy/app/controllers/localized_urls.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/dummy/app/controllers/posts_controller.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/dummy/app/decorators/mongoid_post_decorator.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/dummy/app/decorators/post_decorator.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/dummy/app/helpers/application_helper.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/dummy/app/mailers/application_mailer.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/dummy/app/mailers/post_mailer.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/dummy/app/models/admin.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/dummy/app/models/mongoid_post.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/dummy/app/models/post.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/dummy/app/models/user.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/dummy/app/views/layouts/application.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/dummy/app/views/post_mailer/decorated_email.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/dummy/app/views/posts/_post.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/dummy/app/views/posts/show.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/dummy/bin/rails" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/dummy/config.ru" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/dummy/config/application.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/dummy/config/boot.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/dummy/config/database.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/dummy/config/environment.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/dummy/config/environments/development.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/dummy/config/environments/production.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/dummy/config/environments/test.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/dummy/config/initializers/backtrace_silencers.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/dummy/config/initializers/inflections.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/dummy/config/initializers/mime_types.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/dummy/config/initializers/secret_token.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/dummy/config/initializers/session_store.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/dummy/config/locales/en.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/dummy/config/mongoid.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/dummy/config/routes.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/dummy/db/migrate/20121019115657_create_posts.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/dummy/db/schema.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/dummy/db/seeds.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/dummy/fast_spec/post_decorator_spec.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/dummy/lib/tasks/test.rake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/dummy/public/404.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/dummy/public/422.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/dummy/public/500.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/dummy/public/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/dummy/script/rails" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/dummy/spec/decorators/active_model_serializers_spec.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/dummy/spec/decorators/devise_spec.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/dummy/spec/decorators/helpers_spec.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/dummy/spec/decorators/post_decorator_spec.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/dummy/spec/decorators/spec_type_spec.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/dummy/spec/decorators/view_context_spec.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/dummy/spec/mailers/post_mailer_spec.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/dummy/spec/models/mongoid_post_spec.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/dummy/spec/models/post_spec.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/dummy/spec/shared_examples/decoratable.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/dummy/spec/spec_helper.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/dummy/test/decorators/minitest/devise_test.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/dummy/test/decorators/minitest/helpers_test.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/dummy/test/decorators/minitest/spec_type_test.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/dummy/test/decorators/minitest/view_context_test.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/dummy/test/decorators/test_unit/devise_test.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/dummy/test/decorators/test_unit/helpers_test.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/dummy/test/decorators/test_unit/view_context_test.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/dummy/test/minitest_helper.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/dummy/test/test_helper.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/generators/controller/controller_generator_spec.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/generators/decorator/decorator_generator_spec.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/integration/integration_spec.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/performance/active_record.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/performance/benchmark.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/performance/decorators.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/performance/models.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/spec_helper.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/support/dummy_app.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/support/matchers/have_text.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/support/shared_examples/decoratable_equality.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/spec/support/shared_examples/view_helpers.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/specifications/draper-2.1.0.gemspec" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/bundler/gems/activeadmin-a932d56b156e" afterPath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/bundler/gems/activeadmin-a932d56b156e" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/bundler/gems/activemodel-serializers-xml-570ee7ed33d6" afterPath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/bundler/gems/activemodel-serializers-xml-570ee7ed33d6" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/bundler/gems/inherited_resources-4434f0ae72f7" afterPath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/bundler/gems/inherited_resources-4434f0ae72f7" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/blog.iml" afterPath="$PROJECT_DIR$/.idea/blog.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/production.rb" afterPath="$PROJECT_DIR$/config/environments/production.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/extensions/x86_64-linux/2.3.0/bcrypt-3.1.11/gem_make.out" afterPath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/extensions/x86_64-linux/2.3.0/bcrypt-3.1.11/gem_make.out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/extensions/x86_64-linux/2.3.0/byebug-9.0.6/gem_make.out" afterPath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/extensions/x86_64-linux/2.3.0/byebug-9.0.6/gem_make.out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/extensions/x86_64-linux/2.3.0/debug_inspector-0.0.2/gem_make.out" afterPath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/extensions/x86_64-linux/2.3.0/debug_inspector-0.0.2/gem_make.out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/extensions/x86_64-linux/2.3.0/ffi-1.9.14/gem_make.out" afterPath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/extensions/x86_64-linux/2.3.0/ffi-1.9.14/gem_make.out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/extensions/x86_64-linux/2.3.0/ffi-1.9.14/mkmf.log" afterPath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/extensions/x86_64-linux/2.3.0/ffi-1.9.14/mkmf.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/extensions/x86_64-linux/2.3.0/nio4r-1.2.1/gem_make.out" afterPath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/extensions/x86_64-linux/2.3.0/nio4r-1.2.1/gem_make.out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/extensions/x86_64-linux/2.3.0/nio4r-1.2.1/mkmf.log" afterPath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/extensions/x86_64-linux/2.3.0/nio4r-1.2.1/mkmf.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/extensions/x86_64-linux/2.3.0/nokogiri-1.6.8.1/gem_make.out" afterPath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/extensions/x86_64-linux/2.3.0/nokogiri-1.6.8.1/gem_make.out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/extensions/x86_64-linux/2.3.0/puma-3.6.0/gem_make.out" afterPath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/extensions/x86_64-linux/2.3.0/puma-3.6.0/gem_make.out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/extensions/x86_64-linux/2.3.0/sqlite3-1.3.12/gem_make.out" afterPath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/extensions/x86_64-linux/2.3.0/sqlite3-1.3.12/gem_make.out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/extensions/x86_64-linux/2.3.0/websocket-driver-0.6.4/gem_make.out" afterPath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/extensions/x86_64-linux/2.3.0/websocket-driver-0.6.4/gem_make.out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/bcrypt-3.1.11/ext/mri/Makefile" afterPath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/bcrypt-3.1.11/ext/mri/Makefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/byebug-9.0.6/ext/byebug/Makefile" afterPath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/byebug-9.0.6/ext/byebug/Makefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/debug_inspector-0.0.2/ext/debug_inspector/Makefile" afterPath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/debug_inspector-0.0.2/ext/debug_inspector/Makefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/ffi-1.9.14/ext/ffi_c/Makefile" afterPath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/ffi-1.9.14/ext/ffi_c/Makefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/nio4r-1.2.1/ext/nio4r/Makefile" afterPath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/nio4r-1.2.1/ext/nio4r/Makefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/nokogiri-1.6.8.1/ext/nokogiri/Makefile" afterPath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/nokogiri-1.6.8.1/ext/nokogiri/Makefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/puma-3.6.0/ext/puma_http11/Makefile" afterPath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/puma-3.6.0/ext/puma_http11/Makefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/sqlite3-1.3.12/ext/sqlite3/Makefile" afterPath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/sqlite3-1.3.12/ext/sqlite3/Makefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/websocket-driver-0.6.4/ext/websocket-driver/Makefile" afterPath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/websocket-driver-0.6.4/ext/websocket-driver/Makefile" />
     </list>
     <ignored path="blog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -233,7 +67,7 @@
         <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="155">
-              <caret line="83" column="112" lean-forward="false" selection-start-line="83" selection-start-column="112" selection-end-line="83" selection-end-column="112" />
+              <caret line="83" column="103" lean-forward="false" selection-start-line="83" selection-start-column="103" selection-end-line="83" selection-end-column="103" />
               <folding />
             </state>
           </provider>
@@ -899,12 +733,12 @@
       <workItem from="1481047544168" duration="9896000" />
       <workItem from="1481092378034" duration="3469000" />
       <workItem from="1481108491515" duration="459000" />
-      <workItem from="1481108975310" duration="28567000" />
+      <workItem from="1481108975310" duration="29196000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="173139000" />
+    <option name="totallyTimeSpent" value="173768000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -927,7 +761,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.46028882" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32792792" sideWeight="0.72472924" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26126125" sideWeight="0.69855595" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3153153" sideWeight="0.69855595" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942238" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1409,7 +1243,7 @@
     <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="155">
-          <caret line="83" column="112" lean-forward="false" selection-start-line="83" selection-start-column="112" selection-end-line="83" selection-end-column="112" />
+          <caret line="83" column="103" lean-forward="false" selection-start-line="83" selection-start-column="103" selection-end-line="83" selection-end-column="103" />
           <folding />
         </state>
       </provider>
