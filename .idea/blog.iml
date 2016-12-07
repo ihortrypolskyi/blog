@@ -420,18 +420,6 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="draper (vbundled(2.1.0), /home/igor/igor/blog/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0) [path][gem]">
-        <CLASSES>
-          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/lib" />
-          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/gemfiles" />
-        </CLASSES>
-        <SOURCES>
-          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/lib" />
-          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/gemfiles" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
       <library name="erubis (vbundled(2.7.0), /home/igor/igor/blog/vendor/bundle/ruby/2.3.0/gems/erubis-2.7.0) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/erubis-2.7.0/bin" />

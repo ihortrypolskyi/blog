@@ -15,7 +15,7 @@ gem 'activeadmin', github: 'activeadmin'
 gem 'inherited_resources', github: 'activeadmin/inherited_resources'
 gem 'devise'
 gem 'cancan' # or cancancan
-gem 'draper'
+gem 'draper', github: 'audionerd/draper', branch: 'rails5', ref: 'e816e0e587'
 gem 'pundit'
 gem 'activemodel-serializers-xml', github: 'rails/activemodel-serializers-xml'
 
