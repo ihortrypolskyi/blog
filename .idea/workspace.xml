@@ -5,6 +5,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/bundler/gems/activeadmin-a932d56b156e" afterPath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/bundler/gems/activeadmin-a932d56b156e" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/bundler/gems/activemodel-serializers-xml-570ee7ed33d6" afterPath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/bundler/gems/activemodel-serializers-xml-570ee7ed33d6" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/bundler/gems/inherited_resources-4434f0ae72f7" afterPath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/bundler/gems/inherited_resources-4434f0ae72f7" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="blog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -115,7 +116,7 @@
       <file leaf-file-name="test.rake" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/lib/draper/tasks/test.rake">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-36">
+            <state relative-caret-position="36">
               <caret line="4" column="28" lean-forward="false" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
               <folding />
             </state>
@@ -878,12 +879,12 @@
       <workItem from="1481047544168" duration="9896000" />
       <workItem from="1481092378034" duration="3469000" />
       <workItem from="1481108491515" duration="459000" />
-      <workItem from="1481108975310" duration="18951000" />
+      <workItem from="1481108975310" duration="19515000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="163523000" />
+    <option name="totallyTimeSpent" value="164087000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -896,7 +897,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="75" y="64" width="1154" height="656" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25270757" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.48194945" order="9" side_tool="false" content_ui="tabs" />
@@ -905,7 +906,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.46028882" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32792792" sideWeight="0.72472924" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25585586" sideWeight="0.69855595" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25585586" sideWeight="0.69855595" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942238" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1370,7 +1371,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/gems/draper-2.1.0/lib/draper/tasks/test.rake">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-36">
+        <state relative-caret-position="36">
           <caret line="4" column="28" lean-forward="false" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
           <folding />
         </state>
