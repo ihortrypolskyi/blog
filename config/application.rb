@@ -24,8 +24,4 @@ module Blog
     # -- all .rb files in that directory are automatically loaded.
     #config.time_zone = 'Eastern European Time (UA)'
   end
-
-  config.assets.initialize_on_precompile = false
-  config.assets.precompile += %w[active_admin.css active_admin.js print.css]
-  config.assets.precompile += %w[active_admin/print.css]
 end
