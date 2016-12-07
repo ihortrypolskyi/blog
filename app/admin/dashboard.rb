@@ -3,7 +3,7 @@ ActiveAdmin.register_page "Dashboard" do
   menu priority: 1, label: proc{ I18n.t("active_admin.dashboard") }
 
   content title: proc{ I18n.t("active_admin.dashboard") } do
-      section "Last Posts", priority: 1 do
+      section "Last Posts" do
         table_for Post.order("id desc").limit(20) do
           column :id
           column :user
@@ -12,6 +12,7 @@ ActiveAdmin.register_page "Dashboard" do
           end
           column :created_at
         end
+        strong { link_to t("All posts"), admin_posts_path }
       end
 
 
