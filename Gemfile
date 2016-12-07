@@ -11,7 +11,13 @@ gem 'jbuilder',     '2.6.0'
 gem 'bcrypt',       '3.1.11'
 gem 'annotate',      '2.7.1'
 gem 'russian',       '0.6.0'
+gem 'activeadmin', github: 'activeadmin'
 gem 'inherited_resources', github: 'activeadmin/inherited_resources'
+gem 'devise'
+gem 'cancan' # or cancancan
+gem 'draper'
+gem 'pundit'
+gem 'activemodel-serializers-xml', github: 'rails/activemodel-serializers-xml'
 
 
 group :development, :test do
