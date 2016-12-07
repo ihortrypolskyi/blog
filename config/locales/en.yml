@@ -75,3 +75,10 @@ en:
           alert: 'The account with specified email and password does not exist.'
       destroy:
           notice: 'You have successfully logged out'
+
+  active_admin.dashboard: 'active_admin.dashboard'
+
+  devise:
+      admin_registrations:
+        admin:
+          signed_up: 'Welcome! You have signed up successfully.'

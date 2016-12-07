@@ -78,6 +78,13 @@ ru:
        destroy:
            notice: 'Вы успешно вышли из аккаунта'
 
+  active_admin.dashboard: 'Админка'
+
+  devise:
+      admin_registrations:
+        admin:
+          signed_up: 'Вы успешно вошли в админ панель'
+
 
 
 
