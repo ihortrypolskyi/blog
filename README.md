@@ -1,6 +1,7 @@
-heroku link: https://enigmatic-lowlands-85008.herokuapp.com
-
-
+heroku link: https://morning-bayou-97869.herokuapp.com/
+heroku link to Dashboard: https://morning-bayou-97869.herokuapp.com/admin
+email: admin@gmail.com
+password: admin123
 
 # README
 
