@@ -1,0 +1,19 @@
+current directory: /home/igor/igor/blog/bundle/ruby/2.3.0/gems/bcrypt-3.1.11/ext/mri
+/home/igor/.rvm/rubies/ruby-2.3.0/bin/ruby -r ./siteconf20161208-10891-1ef8hii.rb extconf.rb
+creating Makefile
+
+current directory: /home/igor/igor/blog/bundle/ruby/2.3.0/gems/bcrypt-3.1.11/ext/mri
+make "DESTDIR=" clean
+
+current directory: /home/igor/igor/blog/bundle/ruby/2.3.0/gems/bcrypt-3.1.11/ext/mri
+make "DESTDIR="
+compiling crypt_blowfish.c
+compiling crypt.c
+compiling bcrypt_ext.c
+compiling wrapper.c
+compiling crypt_gensalt.c
+linking shared-object bcrypt_ext.so
+
+current directory: /home/igor/igor/blog/bundle/ruby/2.3.0/gems/bcrypt-3.1.11/ext/mri
+make "DESTDIR=" install
+/usr/bin/install -m 0755 bcrypt_ext.so ./.gem.20161208-10891-aobfcq
