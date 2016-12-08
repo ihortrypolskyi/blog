@@ -27,5 +27,5 @@
 
 /vendor/bundle
 
-/idea
+*/.idea/*
 
