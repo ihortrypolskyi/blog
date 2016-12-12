@@ -164,7 +164,7 @@ label {
   width:200px;
   height: 31px;
 }
-#table_body {
+#table_body, #comment_content {
   width: 600px;
   height: auto;
 }
@@ -191,7 +191,7 @@ label {
   }
 }
 
-#table_body, #table_title, #table_user {
+#table_body, #table_title, #table_user, #comment_content {
   border: {
     style: solid;
     color: #8b7d6b;

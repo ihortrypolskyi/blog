@@ -13,6 +13,7 @@
 
 class User < ApplicationRecord
   has_many :posts, dependent: :destroy
+  has_many :comments
   validates :first_name, :last_name, uniqueness: { case_sensitive: false }, presence: true, length: { in: 2..20 }
   validates :last_name, uniqueness: { case_sensitive: false }, presence: true, length: { in: 2..20 }
   has_secure_password

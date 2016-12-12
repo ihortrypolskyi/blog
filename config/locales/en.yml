@@ -82,3 +82,9 @@ en:
       admin_registrations:
         admin:
           signed_up: 'Welcome! You have signed up successfully.'
+
+  Number of comments: 'Number of comments: '
+  comments: 'comments:'
+  Are you sure?: 'Are you sure?'
+  leave your comment here: 'leave your comment here'
+  Add comment: 'Add comment'

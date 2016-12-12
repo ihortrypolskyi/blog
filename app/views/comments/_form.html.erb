@@ -1,0 +1,9 @@
+<%= form_for([@post, @post.comments.build]) do |f| %>
+    <div class="field">
+        <%= f.text_area :content, :placeholder => t('leave your comment here') %>
+    </div>
+    <div class="actions">
+      <%= f.submit t('Add comment') %>
+    </div>
+<% end %>
+

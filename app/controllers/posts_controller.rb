@@ -19,6 +19,7 @@ class PostsController < ApplicationController
     #respond_to do |format|
     #  format.json { render json: @post.to_json }
     #  format.html
+    @comments = Comment.where(post_id: @post).order('created_at DESC')
    # end
     #render json: {error: 'error_msg'}, status: :forbidden
   end

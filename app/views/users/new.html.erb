@@ -1,13 +1,13 @@
   <div class="login">
   <div class="container">
     <div class="form">
-    <h1><%= t("Fill in the form")%></h1>
+    <h1><%= t('Fill in the form')%></h1>
     <%= form_for(@user) do |f| %>
-      <%= f.text_field :first_name, :placeholder => t("first_name") %><br>
-      <%= f.text_field :last_name, :placeholder => t("last_name") %><br>
-      <%= f.email_field :email, :placeholder => t("email") %><br>
-      <%= f.password_field :password, :placeholder => t("password") %><br>
-      <%= f.submit t("create_an_account"), class: "btn-submit" %><br>
+      <%= f.text_field :first_name, :placeholder => t('first_name') %><br>
+      <%= f.text_field :last_name, :placeholder => t('last_name') %><br>
+      <%= f.email_field :email, :placeholder => t('email') %><br>
+      <%= f.password_field :password, :placeholder => t('password') %><br>
+      <%= f.submit t('create_an_account'), class: 'btn-submit' %><br>
     <% end %>
     </div>
   </div>

@@ -27,9 +27,12 @@
           <% end %>
           <tr>
             <th class='post_created' ><%= t('post_created') %></th>
-            <td id="post_created"><%= l post.created_at, format: :long %></td>
+              <td id="post_created"><%= l post.created_at, format: :long %></td>
           </tr>
-      </tr>
+          <tr>
+            <th class='post_created' ><%= t('comments')%></th>
+              <td id="post_created"><%= post.comments.count %></td>
+          </tr>
     <% end %>
   </tbody>
 </table>
