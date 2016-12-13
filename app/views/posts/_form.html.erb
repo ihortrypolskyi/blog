@@ -1,16 +1,15 @@
-<%= form_for(post) do |f| %>
-  <% if post.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(post.errors.count, 'error') %> prohibited this post from being saved:</h2>
-
+<% if post.errors.any? %>
+   <div id="error_explanation">
+     <h2><%= pluralize(post.errors.count, 'error') %></h2>
       <ul>
-      <% post.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
+        <% post.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
       </ul>
-    </div>
-  <% end %>
+   </div>
+<% end %>
 
+<%= form_for(post) do |f| %>
   <div class="field">
     <%= f.label t('title') %>
     <%= f.text_field :title %>
@@ -20,6 +19,11 @@
     <%= f.label t('content') %>
     <%= f.text_area :body %>
   </div>
+
+    <div class="field">
+      <%= f.label 'image' %>
+      <%= f.file_field :image %>
+    </div>
 
   <div class="actions">
     <%= f.submit t('submit') %>
