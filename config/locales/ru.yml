@@ -85,7 +85,7 @@ ru:
         admin:
           signed_up: 'Вы успешно вошли в админ панель'
 
-  Number of comments: 'Количество комментариев: '
+  Number of comments: 'Количество комментариев'
   comments: 'комментариев:'
   Are you sure?: 'Вы уверены?'
   leave your comment here: 'добавьте Ваш комментарий...'
