@@ -70,7 +70,7 @@ body {
 p, ol, ul, td {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 18px;
-  line-height: 18px;
+  //line-height: 18px;
   margin: 33px;
   /*border-style: solid;
   border-color: #8b7d6b;*/
@@ -156,7 +156,7 @@ label {
 }
 
 #post_body {
-  width: 930px;
+  width: 580px;
   height: auto;
 }
 
@@ -209,12 +209,12 @@ label {
 
 #large_image {
   display: block;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 }
 
 #thumb_image {
   float: left;
-  margin-right: 1em;
+  margin-left: 1em;
 }
 
 p {

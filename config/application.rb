@@ -23,5 +23,7 @@ module Blog
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
     #config.time_zone = 'Eastern European Time (UA)'
+    config.time_zone = 'Kyiv'
+    config.active_record.default_timezone = :local
   end
 end

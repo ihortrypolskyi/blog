@@ -22,18 +22,18 @@
         <td id="table_title"><%= post.title %></td>
         <td id="table_body"><%= post.body %></td>
         <td id="table_user"><%= post.user.first_name %> <%= post.user.last_name %></td>
-        <nav><td ><%= link_to t('show'), post_path(post) %></td>
+        <nav><td ><%= link_to t('show'), post_path(post) %>
         <% if post.user.id == current_user.id %> 
-        <td><%= link_to t('edit'), edit_post_path(post) %></td>
-        <td><%= link_to t('delete'), post_path(post), method: :delete, data: { confirm: t('Are you sure?') } %></td></nav>
+        <%= link_to t('edit'), edit_post_path(post) %>
+              <%= link_to t('delete'), post_path(post), method: :delete, data: { confirm: t('Are you sure?') } %></td></nav>
           <% end %>
           <tr>
-            <th class='post_created' ><%= t('post_created') %></th>
-              <td id="post_created"><%= l post.created_at, format: :long %></td>
+            <th></th>
+              <td id="post_created"><%= t('post_created') %><%= l post.created_at, format: :long %></td>
           </tr>
           <tr>
-            <th class='post_created' ><%= t('comments')%></th>
-              <td id="post_created"><%= post.comments.count %></td>
+            <th></th>
+              <td id="post_created"><%= link_to t('comments'), '#' %> <%= post.comments.count %></td>
           </tr>
     <% end %>
   </tbody>

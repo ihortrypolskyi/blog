@@ -43,7 +43,7 @@ ru:
   show: 'Просмотр'
   edit: 'Обновить'
   delete: 'Удалить'
-  post_created: 'создан:'
+  post_created: 'создан: '
   new_post: 'Создать пост'
 
   first_name: 'имя'
@@ -88,9 +88,11 @@ ru:
   Number of comments: 'Количество комментариев: '
   comments: 'комментариев:'
   Are you sure?: 'Вы уверены?'
-  leave your comment here: 'добавьте Ваш комментарий'
+  leave your comment here: 'добавьте Ваш комментарий...'
   Add comment: 'Добавить'
   image: 'Изображение'
+  home: 'На главную'
+  ago: ' назад'
 
 
 

@@ -18,16 +18,19 @@
         <td id="post_title"><%= @post.title %></td>
         <td id="post_body"><%= @post.body %></td>
 
-        <% if @post.user.id == current_user.id %> 		
- 		      <td><%= link_to t('edit'), edit_post_path %></td>
+       <td><% if @post.user.id == current_user.id %>
+            <%= link_to t('edit'), edit_post_path %><br>
         <% end %>
-
-       <td><%= link_to t('All posts'), posts_path %></td>
+        <%= link_to t('home'), posts_path %></td>
      </tr>
      <tr>
-       <th class='post_created' ><%= t('post_created') %></th>
-       <td id="post_created"><%= l @post.created_at, format: :long %></td>
+       <th></th>
+       <td id="post_created"><%= t('post_created') %> <%= l @post.created_at, format: :long %></td>
      </tr>
   </tbody>
 </table>
-        <%= render 'comments/comment' %>
+<section id="comments_section">
+  <ol id="comments">
+     <%= render 'comments/comment' %>
+  </ol>
+</section>

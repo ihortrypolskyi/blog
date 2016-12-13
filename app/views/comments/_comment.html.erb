@@ -7,7 +7,8 @@
   <% @post.comments.each do |comment| %>
       <tr>
         <td id="post_title"><%= comment.user.first_name %><%= comment.user.last_name %></td>
-        <td id="post_title"><%= comment.created_at.strftime('%d-%m-%Y %H:%M') %></td>
+        <!--<td id="post_title"><%= comment.created_at.strftime('%d-%m-%Y %H:%M') %></td>-->
+        <td id="post_title"><%= time_ago_in_words(comment.created_at) %><%= t('ago') %></td>
         <td id="post_body"><%= comment.content %></td>
         <% if comment.user_id == current_user.id %>
           <nav>
