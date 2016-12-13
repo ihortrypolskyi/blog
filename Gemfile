@@ -18,6 +18,8 @@ gem 'cancan' # or cancancan
 gem 'draper', github: 'audionerd/draper', branch: 'rails5', ref: 'e816e0e587'
 gem 'pundit'
 gem 'activemodel-serializers-xml', github: 'rails/activemodel-serializers-xml'
+gem 'carrierwave',    '>= 1.0.0.rc', '< 2.0'
+gem 'mini_magick'
 
 
 group :development, :test do
