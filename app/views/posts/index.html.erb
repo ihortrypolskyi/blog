@@ -25,7 +25,7 @@
         <nav><td ><%= link_to t('show'), post_path(post) %></td>
         <% if post.user.id == current_user.id %> 
         <td><%= link_to t('edit'), edit_post_path(post) %></td>
-        <td><%= link_to t('delete'), post_path(post), method: :delete, data: { confirm: 'Are you sure?' } %></td></nav>
+        <td><%= link_to t('delete'), post_path(post), method: :delete, data: { confirm: t('Are you sure?') } %></td></nav>
           <% end %>
           <tr>
             <th class='post_created' ><%= t('post_created') %></th>
