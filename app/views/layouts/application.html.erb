@@ -18,7 +18,7 @@
               <li><a><%= link_to t('Ru'), ru_path, locale: 'ru' %></a></li>
               <li><a><%= link_to t('New post'), new_post_path %></a></li>
               <li><a><%= link_to t('All posts'), '/' %></a></li>
-              <li><a><%= link_to t('Log out'), logout_path, method: "delete" %></li>
+              <li><a><%= link_to t('Log out'), logout_path, method: 'delete' %></li>
               <li><a><%= current_user.first_name %> <%= current_user.last_name %></li>               
             </ul> 
           <% else %> 

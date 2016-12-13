@@ -29,6 +29,7 @@
      </tr>
   </tbody>
 </table>
+        <p><%= link_to  t('Number of comments') , '#' %>: <%= @post.comments.count %></p>
 <section id="comments_section">
   <ol id="comments">
      <%= render 'comments/comment' %>

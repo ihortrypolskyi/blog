@@ -26,6 +26,7 @@
         <% if post.user.id == current_user.id %> 
         <%= link_to t('edit'), edit_post_path(post) %><br>
               <%= link_to t('delete'), post_path(post), method: :delete, data: { confirm: t('Are you sure?') } %></td></nav>
+
           <% end %>
           <tr>
             <th></th>
@@ -35,10 +36,8 @@
             <th></th>
               <td id="post_created"><%= t('comments') %> <%= post.comments.count %></td>
           </tr>
-
     <% end %>
 
-    <%= render 'posts/show' %>
 
   </tbody>
 </table>
