@@ -9,7 +9,8 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def index
-    @posts = Post.all
+    @posts = Post.all.includes(:comments)
+    @comments = Comment.all
   end
 
   # GET /posts/1
@@ -38,6 +39,7 @@ class PostsController < ApplicationController
   def create
     @post = Post.new(post_params)
     @post.user = current_user
+
 
     respond_to do |format|
       if @post.save
