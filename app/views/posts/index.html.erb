@@ -25,18 +25,19 @@
         <nav><td ><%= link_to t('show'), post_path(post) %><br>
         <% if post.user.id == current_user.id %> 
         <%= link_to t('edit'), edit_post_path(post) %><br>
-              <%= link_to t('delete'), post_path(post), method: :delete, data: { confirm: t('Are you sure?') } %></td></nav>
-          <% end %>
+        <%= link_to t('delete'), post_path(post),
+                          method: :delete, data: { confirm: t('Are you sure?') } %></td></nav>          <% end %>
           <tr>
             <th></th>
               <td id="post_created"><%= t('post_created') %><%= l post.created_at, format: :long %></td>
           </tr>
           <tr>
             <th></th>
-              <td id="post_created"><%= t('comments') %> <%= post.comments.count %></td>
-          </tr>
+                <td id="post_created"><%= t('comments') %> <%= post.comments.count %></td>
+                <td class="comments-link"><%= link_to 'Comments', '#' %></td>
+
           <% post.comments.each do |comment| %>
-              <tr>
+              <tr class="comments-section" var="panel">
                 <td></td>
                 <td id="post_title"><%= comment.user.first_name %> <%= comment.user.last_name %><br>
                   <%= time_ago_in_words(comment.created_at) %><%= t('ago') %></td>
@@ -44,18 +45,16 @@
                 <td id="post_body"><%= comment.content %></td>
                 <% if comment.user_id == current_user.id %>
                     <nav>
-                      <td><%= link_to t('edit'), edit_post_comment_path(comment.post, comment) %></td>
-                      <td><%= link_to t('delete'), [comment.post, comment],
+                      <td><%= link_to t('edit'), edit_post_comment_path(comment.post, comment) %><br>
+                      <%= link_to t('delete'), [comment.post, comment],
                                       method: :delete, data: { confirm: t('Are you sure?') } %></td>
-
                     </nav>
-
                 <% end %>
-
               </tr>
 
           <% end %>
-          <th></th>
+
+          <td><hr></td>
     <% end %>
   </tbody>
 </table>

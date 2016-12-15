@@ -14,3 +14,16 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+
+$(function() {
+    $('.comments-link').on('click', function(e) {
+        e.preventDefault()
+        $('.comments-section').toggle();
+    });
+});
+
+
+$(function(){
+    $('p#image').fadeOut(900).fadeIn(900);
+});

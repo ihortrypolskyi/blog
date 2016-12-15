@@ -13,7 +13,7 @@
         <% if comment.user_id == current_user.id %>
           <nav>
           <td><%= link_to t('edit'), edit_post_comment_path(comment.post, comment) %></td>
-          <td><%= link_to t('delete'), [comment.post, comment],
+          <td><%= link_to t('delete'), post_comment_path(comment.post, comment),
                             method: :delete, data: { confirm: t('Are you sure?') } %></td>
           </nav>
           <% end %>
