@@ -20,6 +20,7 @@ gem 'pundit'
 gem 'activemodel-serializers-xml', github: 'rails/activemodel-serializers-xml'
 gem 'carrierwave',    '>= 1.0.0.rc', '< 2.0'
 gem 'mini_magick'
+gem 'acts_as_votable', '~> 0.10.0'
 
 
 group :development, :test do

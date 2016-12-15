@@ -18,8 +18,8 @@
 
 $(function() {
     $('.comments-link').on('click', function(e) {
-        e.preventDefault()
-        $('.comments-section').toggle();
+        e.preventDefault();
+          $('.comments-section').toggle();
     });
 });
 
