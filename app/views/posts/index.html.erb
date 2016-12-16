@@ -26,15 +26,15 @@
         <% if post.user.id == current_user.id %> 
         <%= link_to t('edit'), edit_post_path(post) %><br>
         <%= link_to t('delete'), post_path(post),
-                          method: :delete, data: { confirm: t('Are you sure?') } %></td></nav>          <% end %>
+                          method: :delete, data: { confirm: t('Are you sure?') } %></td></nav>
+        <% end %>
           <tr>
             <th></th>
               <td id="post_created"><%= t('post_created') %><%= l post.created_at, format: :long %></td>
           </tr>
           <tr>
             <th></th>
-                <td id="post_created"><%= t('comments') %> <%= post.comments.count %></td>
-                <td class="comments-link"><%= link_to 'Comments', '#' %></td>
+                <td class="comments-link" id="post_created"><%= link_to t('comments'), '#' %> <%= post.comments.count %></td>
 
           <% post.comments.each do |comment| %>
               <tr class="comments-section">
@@ -43,7 +43,7 @@
                   <%= time_ago_in_words(comment.created_at) %><%= t('ago') %></td>
                 <!--<td id="post_title"><%= comment.created_at.strftime('%d-%m-%Y %H:%M') %></td>-->
                 <td id="post_body"><%= comment.content %></td>
-                <% if comment.user_id == current_user.id %>
+                <% if comment.user_id == current_user.id && comment == post.comments.last %>
                     <nav>
                       <td><%= link_to t('edit'), edit_post_comment_path(comment.post, comment) %><br>
                       <%= link_to t('delete'), [comment.post, comment],
@@ -53,8 +53,7 @@
               </tr>
 
           <% end %>
-
-          <td><hr></td>
+          <td></td>
     <% end %>
   </tbody>
 </table>

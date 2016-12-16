@@ -22,5 +22,5 @@ class User < ApplicationRecord
   validates :email, presence: true, length: { maximum: 255 }, format: { with: VALID_EMAIL_REGEX }, uniqueness: true
   before_save { email.downcase! }
   #castom validation examp: validates_presence_of :body, if: lambda {|post| post.title.length > 10 }
-
+  acts_as_voter
   end

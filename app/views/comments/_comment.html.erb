@@ -1,4 +1,4 @@
-<p><%= t('Number of comments') %>: <%= @post.comments.count %></p>
+  <p><%= t('Number of comments') %>: <%= @post.comments.count %></p>
 <table>
   <thead>
 
@@ -9,12 +9,22 @@
         <td id="post_title"><%= comment.user.first_name %><%= comment.user.last_name %></td>
         <!--<td id="post_title"><%= comment.created_at.strftime('%d-%m-%Y %H:%M') %></td>-->
         <td id="post_title"><%= time_ago_in_words(comment.created_at) %><%= t('ago') %></td>
-        <td id="post_body"><%= comment.content %></td>
-        <% if comment.user_id == current_user.id %>
+        <td id="post_body"><%= comment.content %>
+        <th class="vote"><%= link_to like_post_comment_path(comment.post, comment), method: :put do %>
+              <%= image_tag('upvote.png', size: '30') %></th>
+              <th><%= comment.get_upvotes.size %></th>
+          <%	end  %>
+
+         <th class="vote"><%= link_to unlike_post_comment_path(comment.post, comment), method: :put do %>
+                <%= image_tag('downvote.png', size: '30') git%></th>
+                <th><%= comment.get_downvotes.size %></th></td>
+            <% end %>
+
+        <% if comment.user_id == current_user.id && comment == @post.comments.last %>
           <nav>
-          <td><%= link_to t('edit'), edit_post_comment_path(comment.post, comment) %></td>
-          <td><%= link_to t('delete'), post_comment_path(comment.post, comment),
-                            method: :delete, data: { confirm: t('Are you sure?') } %></td>
+          <td><%= link_to t('edit'), edit_post_comment_path(comment.post, comment) %><br>
+          <%= link_to t('delete'), post_comment_path(comment.post, comment),
+                      method: :delete, data: { confirm: t('Are you sure?') } %></td>
           </nav>
           <% end %>
       </tr>
