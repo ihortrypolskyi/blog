@@ -18,10 +18,10 @@
   <tbody>
   <% @posts.each do |post| %>
       <tr>
-        <td id="large_image"><%= image_tag post.image.url(:thumb) if post.image? %></td>
-        <td id="table_title"><%= post.title %></td>
-        <td id="table_body"><%= post.body %></td>
-        <td id="table_user"><%= post.user.first_name %> <%= post.user.last_name %></td>
+        <td class="large_image"><%= image_tag post.image.url(:thumb) if post.image? %></td>
+        <td class="table_title"><%= post.title %></td>
+        <td class="table_body"><%= post.body %></td>
+        <td class="table_user"><%= post.user.first_name %> <%= post.user.last_name %></td>
         <nav><td ><%= link_to t('show'), post_path(post) %><br>
           <% if post.user.id == current_user.id %>
               <%= link_to t('edit'), edit_post_path(post) %><br>
@@ -30,7 +30,7 @@
           <% end %>
           <tr>
             <th></th>
-            <td id="post_created"><%= t('post_created') %><%= l post.created_at, format: :long %></td>
+            <td class="post_created"><%= t('post_created') %><%= l post.created_at, format: :long %></td>
           </tr>
           <tr>
             <th></th>
@@ -44,10 +44,10 @@
           <% post.comments.each do |comment| %>
               <tr class="comments-section">
                 <td></td>
-                <td id="post_title"><%= comment.user.first_name %> <%= comment.user.last_name %><br>
+                <td class="post_title"><%= comment.user.first_name %> <%= comment.user.last_name %><br>
                   <%= time_ago_in_words(comment.created_at) %><%= t('ago') %></td>
                 <!--<td id="post_title"><%= comment.created_at.strftime('%d-%m-%Y %H:%M') %></td>-->
-                <td id="post_body"><%= comment.content %></td>
+                <td class="post_body"><%= comment.content %></td>
                 <% if comment.user_id == current_user.id && comment == post.comments.last %>
                     <nav>
                       <td><%= link_to t('edit'), edit_post_comment_path(comment.post, comment) %><br>

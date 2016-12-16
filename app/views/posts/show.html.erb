@@ -14,9 +14,9 @@
   </thead>
   <tbody>
   <tr>
-    <td id="thumb_image"><%= image_tag @post.image.url(:large) if @post.image? %></td>
-    <td id="post_title"><%= @post.title %></td>
-    <td id="post_body"><%= @post.body %></td>
+    <td class="thumb_image"><%= image_tag @post.image.url(:large) if @post.image? %></td>
+    <td class="post_title"><%= @post.title %></td>
+    <td class="post_body"><%= @post.body %></td>
 
     <td><% if @post.user.id == current_user.id %>
           <%= link_to t('edit'), edit_post_path %><br>
@@ -25,7 +25,7 @@
   </tr>
   <tr>
     <th></th>
-    <td id="post_created"><%= t('post_created') %> <%= l @post.created_at, format: :long %></td>
+    <td class="post_created"><%= t('post_created') %> <%= l @post.created_at, format: :long %></td>
   </tr>
   </tbody>
 </table>
