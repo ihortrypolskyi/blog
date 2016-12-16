@@ -22,7 +22,7 @@ class PostsController < ApplicationController
     #  format.html
     @comments = Comment.where(post_id: @post).order(created_at: :desc)
 
-   # end
+    # end
     #render json: {error: 'error_msg'}, status: :forbidden
   end
 
@@ -78,24 +78,24 @@ class PostsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_post
-      @post = Post.find(params[:id])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_post
+    @post = Post.find(params[:id])
+  end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def post_params
-      params.require(:post).permit(:title, :body, :image)
-    end
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def post_params
+    params.require(:post).permit(:title, :body, :image)
+  end
 
-    def update_views
-      if cookies[:views].present?
-        cookies[:views] = cookies[:views].to_i + 1
-      else
-        cookies[:views] = 1
-      end
-      if cookies[:views] % 10 == 0
-        flash.now[:notice] = t('Study ROR with GeekHub!!!')
-      end
+  def update_views
+    if cookies[:views].present?
+      cookies[:views] = cookies[:views].to_i + 1
+    else
+      cookies[:views] = 1
     end
+    if cookies[:views] % 10 == 0
+      flash.now[:notice] = t('Study ROR with GeekHub!!!')
+    end
+  end
 end

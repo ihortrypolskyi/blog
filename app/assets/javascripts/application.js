@@ -24,6 +24,7 @@ $(function() {
 });
 
 
+
 $(function(){
     $('p#image').fadeOut(900).fadeIn(900);
 });

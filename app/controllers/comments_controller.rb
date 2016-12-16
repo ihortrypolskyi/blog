@@ -10,7 +10,7 @@ class CommentsController < ApplicationController
     @comment.save
 
     if @comment.save
-     redirect_to post_path(@post)
+      redirect_to post_path(@post)
     else
       render :edit
     end
@@ -57,5 +57,4 @@ class CommentsController < ApplicationController
       redirect_to @post
     end
   end
-
 end
