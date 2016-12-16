@@ -34,7 +34,12 @@
           </tr>
           <tr>
             <th></th>
-                <td class="comments-link" id="post_created"><%= link_to t('comments'), '#' %> <%= post.comments.count %></td>
+            <% if post.comments.count >= 1 %>
+                <td class="comments-link" class="comments"> <%= link_to( image_tag('comments.jpg', size: '30')) %> <%= post.comments.count %></td>
+               <% else %>
+                <td class="no_comments" > <%= image_tag('comments.jpg', size: '30') %> <%= post.comments.count %></td>
+            <% end %>
+          </tr>
 
           <% post.comments.each do |comment| %>
               <tr class="comments-section">

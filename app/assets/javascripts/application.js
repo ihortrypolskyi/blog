@@ -27,3 +27,9 @@ $(function() {
 $(function(){
     $('p#image').fadeOut(900).fadeIn(900);
 });
+
+$(function() {
+    $('.vote_link').on('click', function(e) {
+        e.preventDefault();
+    });
+});
