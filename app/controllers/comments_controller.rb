@@ -3,6 +3,12 @@ class CommentsController < ApplicationController
   before_action :find_comment, only: [:destroy, :edit, :update, :comment_owner, :upvote, :downvote]
   before_action :comment_owner, only: [:destroy, :edit, :update]
 
+  def new
+    @comment = Comment.new(parent_id: params[:parent_id])
+    @comment.parent_id = params[:parent_id]
+
+  end
+
   def create
     @comment = @post.comments.create(params[:comment].permit(:content))
     @comment.user = current_user
