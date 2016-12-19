@@ -1,8 +1,6 @@
-<%= form_for([@post, @post.comments.build]) do |f| %>
+<%= form_for([@post, @comment || @post.comments.build]) do |f| %>
 
-
-    <%= f.hidden_field :parent_id, value: parent_id if defined? parent_id %>
-
+    <%= f.hidden_field :parent_id %>
 
     <div class="field">
         <%= f.text_area :content, :placeholder => t('leave your comment here') %>

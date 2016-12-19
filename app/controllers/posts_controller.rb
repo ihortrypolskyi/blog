@@ -15,10 +15,12 @@ class PostsController < ApplicationController
 
   def show
     @comments = Comment.where(post_id: @post).order(created_at: :desc)
+
   end
 
   def new
     @post = Post.new
+    @post = current_user.posts.build
   end
 
 
@@ -29,6 +31,7 @@ class PostsController < ApplicationController
   def create
     @post = Post.new(post_params)
     @post.user = current_user
+    @post = current_user.posts.build(post_params)
 
 
     respond_to do |format|
