@@ -9,7 +9,7 @@
    </div>
 <% end %>
 
-<%= form_for(post) do |f| %>
+<%= form_for(@post) do |f| %>
   <div class="field">
     <%= f.label t('title') %>
     <%= f.text_field :title %>

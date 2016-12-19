@@ -14,9 +14,7 @@ class PostsController < ApplicationController
 
 
   def show
-    @comments = Comment.where(post_id: @post).order(created_at: :desc)
-    @comments = @post.comments
-
+    @comments = Comment.where(post_id: @post).order('created_at DESC')
   end
 
   def new
@@ -24,16 +22,13 @@ class PostsController < ApplicationController
     @post = current_user.posts.build
   end
 
-
   def edit
   end
-
 
   def create
     @post = Post.new(post_params)
     @post.user = current_user
     @post = current_user.posts.build(post_params)
-
 
     respond_to do |format|
       if @post.save
@@ -45,7 +40,6 @@ class PostsController < ApplicationController
       end
     end
   end
-
 
   def update
     respond_to do |format|
