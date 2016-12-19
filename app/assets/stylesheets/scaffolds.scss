@@ -160,7 +160,7 @@ label {
   display: block;
 }
 
-.post_body {
+.post_body, .comment_body {
   width: 580px;
   height: auto;
 }
@@ -184,7 +184,7 @@ label {
   text-align: center;
 }
 
-.post_body, .post_title, .post_user {
+.post_body, .post_title, .post_user, .comment_body {
   border: {
     style: solid;
     color: #8b7d6b;
@@ -255,5 +255,7 @@ p {
   filter:alpha(opacity=50);
 }
 
-
+.nested_comments {
+   margin-left: 30px;
+}
 

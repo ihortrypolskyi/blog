@@ -6,10 +6,10 @@
   <tbody>
   <% @post.comments.each do |comment| %>
       <tr>
-        <td class="post_title"><%= comment.user.first_name %><%= comment.user.last_name %></td>
-        <!--<td class="post_title"><%= comment.created_at.strftime('%d-%m-%Y %H:%M') %></td>-->
-        <td class="post_title"><%= time_ago_in_words(comment.created_at) %><%= t('ago') %></td>
-        <td class="post_body"><%= comment.content %>
+        <td class="comment_title"><%= comment.user.first_name %><%= comment.user.last_name %></td>
+        <!--<td class="comment_title"><%= comment.created_at.strftime('%d-%m-%Y %H:%M') %></td>-->
+        <td class="comment_title"><%= time_ago_in_words(comment.created_at) %><%= t('ago') %></td>
+        <td class="comment_body"><%= comment.content %>
 
 
          <td><%= link_to 'Reply', new_post_comment_path(comment.post, parent_id: comment) %> </td>

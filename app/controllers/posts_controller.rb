@@ -6,37 +6,26 @@ class PostsController < ApplicationController
 
   before_action :update_views
 
-  # GET /posts
-  # GET /posts.json
+
   def index
     @posts = Post.all.includes(:comments)
     @comments = Comment.all
   end
 
-  # GET /posts/1
-  # GET /posts/1.json
-  def show
-    @post = Post.find(params[:id])
-    #respond_to do |format|
-    #  format.json { render json: @post.to_json }
-    #  format.html
-    @comments = Comment.where(post_id: @post).order(created_at: :desc)
 
-    # end
-    #render json: {error: 'error_msg'}, status: :forbidden
+  def show
+    @comments = Comment.where(post_id: @post).order(created_at: :desc)
   end
 
-  # GET /posts/new
   def new
     @post = Post.new
   end
 
-  # GET /posts/1/edit
+
   def edit
   end
 
-  # POST /posts
-  # POST /posts.json
+
   def create
     @post = Post.new(post_params)
     @post.user = current_user
@@ -53,8 +42,7 @@ class PostsController < ApplicationController
     end
   end
 
-  # PATCH/PUT /posts/1
-  # PATCH/PUT /posts/1.json
+
   def update
     respond_to do |format|
       if @post.update(post_params)
@@ -67,8 +55,6 @@ class PostsController < ApplicationController
     end
   end
 
-  # DELETE /posts/1
-  # DELETE /posts/1.json
   def destroy
     @post.destroy
     respond_to do |format|

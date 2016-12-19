@@ -6,13 +6,11 @@ class CommentsController < ApplicationController
   def new
     @comment = Comment.new(parent_id: params[:parent_id])
     @comment.parent_id = params[:parent_id]
-
   end
 
   def create
-    @comment = @post.comments.create(params[:comment].permit(:content))
-    @comment.user = current_user
-    #@comment.user = current_user
+    @comment = @post.comments.create(comment_params)
+    @comment.user_id = current_user.id
     @comment.save
 
     if @comment.save
@@ -26,7 +24,7 @@ class CommentsController < ApplicationController
   end
 
   def update
-    if @comment.update(params[:comment].permit(:content))
+    if @comment.update(comment_params)
       redirect_to post_path(@post)
     else
       render 'posts/show'
@@ -62,5 +60,9 @@ class CommentsController < ApplicationController
       flash[:notice] = 'You have no permission'
       redirect_to @post
     end
+  end
+
+  def comment_params
+    params.require(:comment).permit(:content, :user_id, :post_id, :parent_id)
   end
 end
