@@ -15,6 +15,7 @@ class PostsController < ApplicationController
 
   def show
     @comments = Comment.where(post_id: @post).order(created_at: :desc)
+    @comments = @post.comments
 
   end
 
