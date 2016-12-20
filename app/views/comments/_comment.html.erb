@@ -4,6 +4,7 @@
 
   </thead>
   <tbody>
+
   <% @post.comments.each do |comment| %>
       <tr>
         <td class="comment_title"><%= comment.user.first_name %><%= comment.user.last_name %></td>
