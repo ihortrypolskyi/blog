@@ -18,12 +18,12 @@
     <td class="post_title"><%= @post.title %></td>
     <td class="post_body"><%= @post.body %></td>
 
-    <nav><td> <%= link_to t('home'), posts_path %>
-        <% if @post.user.id == @current_user.id %>
-          <%= link_to t('edit'), edit_post_path(@post) %><br>
-          <%= link_to t('delete'), post_path(@post),
+    <td><%= link_to t('home'), posts_path %><br>
+        <% if @post.user.id == current_user.id %>
+        <%= link_to t('edit'), edit_post_path(@post) %><br>
+        <%= link_to t('delete'), post_path(@post),
                     method: :delete, data: { confirm: t('Are you sure?') } %></td></nav>
-        <% end %>
+    <% end %>
   </tr>
   <tr>
     <th></th>
@@ -32,7 +32,11 @@
   </tbody>
 </table>
 
-<%= render 'comments/comment' %>
+
+<%= render 'comments/comment', :comment => @comment %>
+
+ <%= nested_comments @comments.arrange(order: :created_at) %>
+ <!--render 'comments/form' %>-->
 
 
 

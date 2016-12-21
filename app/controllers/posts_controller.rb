@@ -9,12 +9,14 @@ class PostsController < ApplicationController
 
   def index
     @posts = Post.all.includes(:comments)
-    @comments = Comment.all
+    # @comments = Comment.all
+    @user = current_user
   end
 
 
   def show
     @comments = Comment.where(post_id: @post).order('created_at DESC')
+
 
   end
 
@@ -27,13 +29,14 @@ class PostsController < ApplicationController
   end
 
   def create
-    @post = Post.new(post_params)
-    @post.user = current_user
+    # @post = Post.new(post_params)
+    # @post.user = current_user
     @post = current_user.posts.build(post_params)
 
     respond_to do |format|
       if @post.save
         format.html { redirect_to @post, notice: t('.notice') }
+        # redirect_to posts_url, notice: 'Post was successfully created.'
         format.json { render :show, status: :created, location: @post }
       else
         format.html { render :new }

@@ -1,4 +1,13 @@
-<%= form_for([@post, @comment]) do |f| %>
-    <%= f.text_area :content %>
-    <%= f.submit %>
-<% end %>
+<!--form_for([@post, @comment]) do |f| %>-->
+    <!-- f.text_area :body %>-->
+    <!-- f.submit %>-->
+<!--end %>-->
+
+
+<%= render 'form', comment: @comment %><br>
+<tr>
+  <nav>
+     <td><%= link_to t('Back'), posts_path %></td>
+  </nav>
+</tr>
+

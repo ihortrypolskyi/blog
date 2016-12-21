@@ -14,9 +14,9 @@ class CommentsController < ApplicationController
     @comment.save
 
     if @comment.save
-      redirect_to post_path(@post)
+      redirect_to @post
     else
-      render :edit
+      render 'new'
     end
   end
 
@@ -25,25 +25,25 @@ class CommentsController < ApplicationController
 
   def update
     if @comment.update(comment_params)
-      redirect_to post_path(@post)
+      redirect_to @post
     else
-      render 'posts/show'
+      render 'edit'
     end
   end
 
   def destroy
     @comment.destroy
-    redirect_to post_path(@post)
+    redirect_to @post
   end
 
   def upvote
     @comment.upvote_from current_user
-    redirect_to post_path(@post)
+    redirect_to @post
   end
 
   def downvote
     @comment.downvote_from current_user
-    redirect_to post_path(@post)
+    redirect_to @post
   end
 
   private
@@ -63,6 +63,6 @@ class CommentsController < ApplicationController
   end
 
   def comment_params
-    params.require(:comment).permit(:content, :user_id, :post_id, :parent_id)
+    params.require(:comment).permit(:body, :user_id, :parent_id)
   end
 end
