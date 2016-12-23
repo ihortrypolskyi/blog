@@ -32,11 +32,13 @@
   </tbody>
 </table>
 
+<p><%= t('Number of comments') %>:<%= @post.comments.count %></p>
 
-<%= render 'comments/comment', :comment => @comment %>
+<%= render 'comments/form' %>
 
- <%= nested_comments @comments.arrange(order: :created_at) %>
- <!--render 'comments/form' %>-->
+ <%= nested_comments @comments.arrange{ order(created_at: :desc) } %>
+
+
 
 
 

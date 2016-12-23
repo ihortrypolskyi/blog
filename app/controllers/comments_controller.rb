@@ -16,7 +16,7 @@ class CommentsController < ApplicationController
     if @comment.save
       redirect_to @post
     else
-      render 'new'
+      render 'edit'
     end
   end
 
@@ -56,7 +56,7 @@ class CommentsController < ApplicationController
   end
 
   def comment_owner
-    unless current_user == @comment.user
+    unless current_user.id == @comment.user_id
       flash[:notice] = 'You have no permission'
       redirect_to @post
     end

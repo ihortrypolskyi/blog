@@ -1,27 +1,19 @@
 class PostsController < ApplicationController
-
   before_action :require_user, only: [:index, :show, :edit, :update]
-
   before_action :set_post, only: [:show, :edit, :update, :destroy]
-
   before_action :update_views
-
 
   def index
     @posts = Post.all.includes(:comments)
-    # @comments = Comment.all
+    @comments = Comment.all
     @user = current_user
   end
 
-
   def show
     @comments = Comment.where(post_id: @post).order('created_at DESC')
-
-
   end
 
   def new
-    # @post = Post.new
     @post = current_user.posts.build
   end
 
@@ -66,12 +58,10 @@ class PostsController < ApplicationController
   end
 
   private
-  # Use callbacks to share common setup or constraints between actions.
   def set_post
     @post = Post.find(params[:id])
   end
 
-  # Never trust parameters from the scary internet, only allow the white list through.
   def post_params
     params.require(:post).permit(:title, :body, :image)
   end

@@ -11,7 +11,6 @@ class UsersController < ApplicationController
     else
       flash[:alert] = t('.alert')
       redirect_to '/signup'
-
     end
   end
 

@@ -1,15 +1,11 @@
-<p><%= t('Number of comments') %>: <%= @post.comments.count %></p>
 <table>
   <thead>
-
   </thead>
   <tbody>
-
-  <% @post.comments.each do |comment| %>
       <tr>
-        <td class="comment_title"><%= comment.user.first_name %><%= comment.user.last_name %></td>
+        <td class="comment_title"><%= comment.user.first_name %><br><%= comment.user.last_name %></td>
         <td class="comment_title"><%= time_ago_in_words(comment.created_at) %><%= t('ago') %></td>
-        <td class="comment_body"><%= comment.content %></td>
+        <td class="comment_body"><%= comment.body %></td>
 
         <td><%= link_to 'Reply', new_post_comment_path(comment.post, parent_id: comment) %> </td>
 
@@ -31,10 +27,6 @@
                 </nav>
             <% end %>
             </tr>
-  <% end %>
-  <hr>
+      <hr>
   </tbody>
 </table>
-<br>
-
-<th>NEW COMMENT WINDOW:<%=	render 'comments/form' %></th>
