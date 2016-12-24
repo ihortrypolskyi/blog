@@ -14,9 +14,11 @@
     <th colspan="3"></th>
   </tr>
   </thead>
-  <tbody>
+  <p class="index_top"></p>
+  <tbody id='posts_list'>
       <%= render @posts %>
   </tbody>
 </table>
 <br>
-<nav><%= link_to t('new_post'), new_post_path %></nav>
+<nav><%= link_to t('new_post'), new_post_path, id: 'new_post_link', remote: true %></nav>
+<p class="index_bottom"></p>
