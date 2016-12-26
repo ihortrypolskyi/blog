@@ -44,7 +44,7 @@ ru:
   edit: 'Обновить'
   delete: 'Удалить'
   post_created: 'создан: '
-  new_post: 'Создать пост'
+  new_post: 'Создать новый пост'
 
   first_name: 'имя'
   last_name: 'фамилия'
@@ -90,12 +90,13 @@ ru:
   see comments: 'посмотреть комментарии:'
   Are you sure?: 'Вы уверены?'
   leave your comment here: 'добавьте Ваш комментарий...'
-  Add comment: 'Добавить'
+  Add a comment: 'Добавить комментарий'
   image: 'Изображение'
   home: 'На главную'
   ago: ' назад'
   Reply: 'ответить'
-  Recomended Posts: 'Рекомендуем прочитать'
+  Recommended for reading: 'Рекомендуем прочитать'
+  read this post: 'читать дальше...'
 
 
 

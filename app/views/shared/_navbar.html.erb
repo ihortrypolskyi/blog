@@ -17,6 +17,9 @@
         <li><%= link_to 'En', en_path, locale: 'en' %></li>
         <li><%= link_to t('Ru'), ru_path, locale: 'ru' %></li>
       </ul>
+      <ul class="nav navbar-nav" class="text-center">
+        <li><a><%= render partial: "shared/flash_messages", flash: flash %></a></li>
+      </ul>
       <ul class="nav navbar-nav navbar-right">
         <% if current_user %>
             <ul class="nav navbar-nav">

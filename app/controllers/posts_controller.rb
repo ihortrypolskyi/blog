@@ -10,7 +10,7 @@ class PostsController < ApplicationController
     @comments = Comment.all
     @user = current_user
     @post = current_user.posts.build
-    @side_list = Post.all.sample(5)
+    @side_list = Post.all.sample(10)
 
   end
 
@@ -32,9 +32,7 @@ class PostsController < ApplicationController
 
     respond_to do |format|
       if @post.save
-        format.html do
-          redirect_to posts_url, notice: 'Post was successfully created.'
-        end
+        format.html { redirect_to @post, notice: t('.notice') }
         format.json { render :index, status: :created, location: @post }
         format.js
       else

@@ -2,11 +2,11 @@
   <hr>
   <h2><%= link_to (post.title), post %></h2>
   <div class="row">
-    <div class="group1 col-sm-9 col-md-9">
+    <div class="group1 col-sm-8 col-md-8">
       <img class="large_image" class="img-responsive">
       <%= image_tag post.image.url(:thumb) if post.image? %>
     </div>
-    <div class="group2 col-sm-3 col-md-3">
+    <div class="group2 col-sm-4 col-md-4">
       <span class="glyphicon glyphicon-time"></span>
       <%= l post.created_at, format: :long %><br>
       <span class="glyphicon glyphicon-user"></span>
@@ -27,19 +27,13 @@
                         method: :delete, data: { confirm: t('Are you sure?') } %>
         <% end %>
 
+      <span class="text-right"></span>
+      <a>
+        <%= link_to t('read this post'), post, class: 'btn btn-info', id: 'continue_reading' %>
+      </a>
+
     </div>
   </div>
   <br>
-  <p class="lead"> <%= truncate(post.body, length: 300) %> Aries is the first sign of the zodiac, and that's pretty much how those born under this sign see themselves: first. Aries are the leaders of the pack, first in line to get things going. Whether or not everything gets done is another question altogether, for an Aries prefers to initiate rather than to complete. Do you have a project needing a kick-start? Call an Aries, by all means. The leadership displayed by Aries is most impressive, so don't be surprised if they can rally the troops against seemingly insurmountable odds.</p>
-  <div class="group1 col-sm-9 col-md-9">
-
-  </div>
-  <div class="group2 col-sm-3 col-md-3">
-    <span class="text-right"></span>
-    <a href="singlepost.html" class="text-right" >
-      <%= link_to 'continue reading...', post, class: 'btn btn-info' %>
-    </a>
-  </div>
-  <br>
-  <br>
+  <p class="lead"> <%= truncate(post.body, length: 245) %><%= link_to '.....', post %></p>
 </article>
