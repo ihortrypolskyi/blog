@@ -22,6 +22,9 @@ gem 'carrierwave',     '>= 1.0.0.rc', '< 2.0'
 gem 'mini_magick'
 gem 'acts_as_votable', '~> 0.10.0'
 gem 'ancestry',        '2.2.2'
+gem 'bootstrap-sass',  '~> 3.3.6'
+gem 'will_paginate',   '3.1.0'
+gem 'bootstrap-will_paginate', '0.0.10'
 
 group :development, :test do
   gem 'sqlite3', '1.3.12'

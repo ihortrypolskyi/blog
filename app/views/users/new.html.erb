@@ -1,18 +1,28 @@
-  <div class="login">
-  <div class="container">
-    <div class="form">
-    <h1><%= t('Fill in the form')%></h1>
-    <%= form_for(@user) do |f| %>
-      <%= f.text_field :first_name, :placeholder => t('first_name') %><br>
-      <%= f.text_field :last_name, :placeholder => t('last_name') %><br>
-      <%= f.email_field :email, :placeholder => t('email') %><br>
-      <%= f.password_field :password, :placeholder => t('password') %><br>
-      <%= f.submit t('create_an_account'), class: 'btn-submit' %><br>
-    <% end %>
+<p id="notice"><%= notice %></p>
+<div class="container">
+
+  <div class="row">
+    <div class="col-md-9 col-sm-9 col-xs-9">
+      <h1><%= t('Fill in the form')%></h1>
     </div>
+
+    <div class="col-md-3 col-sm-3 col-xs-3">
+      <div class="well">
+        <form role="form">
+          <h1><%= t('Sign up')%></h1>
+          <%= form_for(@user) do |f| %>
+              <%= f.text_field :first_name, :placeholder => t('first_name'), class:"form-control" %><br>
+              <%= f.text_field :last_name, :placeholder => t('last_name'), class:"form-control" %><br>
+              <%= f.email_field :email, :placeholder => t('email'), type:"email", class:"form-control" %><br>
+              <%= f.password_field :password, :placeholder => t('password'), class:"form-control" %><br>
+              <%= f.submit t('create_an_account'), type: "submit", class:"btn btn-info" %><br>
+          <% end %>
+        </form>
+      </div>
+     </div>
   </div>
+  <% if flash[:alert] %>
+      <div id="error_explanation"><%= alert %></div>
+  <% end %>
 </div>
 
-<% if flash[:alert] %>
-    <div id="error_explanation"><%= alert %></div>
-<% end %>

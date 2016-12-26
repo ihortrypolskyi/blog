@@ -39,7 +39,7 @@ ru:
   posts_list: 'Список постов'
   title: 'Заголовок'
   content: 'Содержание'
-  user: 'Автор'
+  user: 'Автор: '
   show: 'Просмотр'
   edit: 'Обновить'
   delete: 'Удалить'
@@ -85,7 +85,7 @@ ru:
         admin:
           signed_up: 'Вы успешно вошли в админ панель'
 
-  Number of comments: 'Количество комментариев'
+  Number of comments: 'Количество комментариев: '
   comments: 'комментариев:'
   see comments: 'посмотреть комментарии:'
   Are you sure?: 'Вы уверены?'

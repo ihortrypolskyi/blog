@@ -1,32 +1,38 @@
-<table>
-  <thead>
-  </thead>
-  <tbody>
-      <tr>
-        <td class="comment_title"><%= comment.user.first_name %><br><%= comment.user.last_name %></td>
-        <td class="comment_title"><%= time_ago_in_words(comment.created_at) %><%= t('ago') %></td>
-        <td class="comment_body"><%= comment.body %></td>
+<ul id="comments" class="comments">
+  <li class="comment">
+    <div class="clearfix" class="row-fluid">
+      <p>
+      <hr>
+        <em><%= comment.body %></em>
+        <%= link_to t('Reply'), new_post_comment_path(comment.post, parent_id: comment),
+                                           class:"btn btn-info btn-xs" %>
+      </p>
+      <p class="pull-right">
+        <span class="glyphicon glyphicon-time"></span>
+        <%= time_ago_in_words(comment.created_at) %><%= t('ago') %> <br>
+        <span class="glyphicon glyphicon-user"></span>
+        <%= comment.user.first_name %> <%= comment.user.last_name %></p>
 
-        <td><%= link_to t('Reply'), new_post_comment_path(comment.post, parent_id: comment) %> </td>
+      <p class="pull-left">
 
-        <td><%= link_to like_post_comment_path(comment.post, comment), class: 'vote_link', method: :put do %>
+         <p><%= link_to like_post_comment_path(comment.post, comment), class: 'vote_link', method: :put do %>
               <%= image_tag('upvote.png', size: '30') %>
-              <%= comment.get_upvotes.size %></td>
+              <%= comment.get_upvotes.size %>
           <%	end  %>
 
-          <td><%= link_to unlike_post_comment_path(comment.post, comment), class: 'vote_link', method: :put do %>
+         <%= link_to unlike_post_comment_path(comment.post, comment), class: 'vote_link', method: :put do %>
                 <%= image_tag('downvote.png', size: '30') %>
-                <%= comment.get_downvotes.size %></td>
-            <%	end  %>
+          <%= comment.get_downvotes.size %>
+            <%	end  %></p>
 
-            <% if comment.user_id == current_user.id && comment == @post.comments.last %>
-                <nav>
-                  <td><%= link_to t('edit'), edit_post_comment_path(comment.post, comment) %><br>
-                    <%= link_to t('delete'), post_comment_path(comment.post, comment),
-                                method: :delete, data: { confirm: t('Are you sure?') } %></td>
-                </nav>
+      <a href="singlepost.html" class="text-left">
+            <% if comment.user_id == current_user.id %>
+                <%= link_to t('edit'), edit_post_comment_path(comment.post, comment), class: 'btn btn-default btn-xs' %>
+                <%= link_to t('delete'), post_comment_path(comment.post, comment), class: 'btn btn-default btn-xs',
+                                method: :delete, data: { confirm: t('Are you sure?') } %>
             <% end %>
-      </tr>
-      <hr>
-  </tbody>
-</table>
+
+      </a>
+    </div>
+    </li>
+  <!--</ul>-->

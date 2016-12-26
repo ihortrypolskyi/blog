@@ -1,24 +1,45 @@
-<tr>
-  <td class="large_image"><%= image_tag post.image.url(:thumb) if post.image? %></td>
-  <td class="table_title"><%= post.title %></td>
-  <td class="table_body"><%= truncate(post.body, length: 25) %></td>
-  <td class="table_user"><%= post.user.first_name %> <%= post.user.last_name %></td>
-  <nav><td ><%= link_to t('show'), post_path(post) %><br>
-    <% if post.user.id == current_user.id %>
-        <%= link_to t('edit'), edit_post_path(post) %><br>
-        <%= link_to t('delete'), post_path(post),
-                    method: :delete, data: { confirm: t('Are you sure?') } %></td></nav>
-    <% end %>
-    <tr>
-      <th></th>
-      <td class="post_created"><%= t('post_created') %><%= l post.created_at, format: :long %></td>
-    </tr>
-    <tr>
-      <th></th>
-      <% if post.comments.count >= 1 %>
-          <td class="comments-link" class="comments"> <%= link_to( image_tag('comments.jpg', size: '30')) %> <%= post.comments.count %></td>
-      <% else %>
-          <td class="no_comments" > <%= image_tag('comments.jpg', size: '30') %> <%= post.comments.count %></td>
-      <% end %>
-    </tr>
-</tr>
+<article>
+  <hr>
+  <h2><%= link_to (post.title), post %></h2>
+  <div class="row">
+    <div class="group1 col-sm-9 col-md-9">
+      <img class="large_image" class="img-responsive">
+      <%= image_tag post.image.url(:thumb) if post.image? %>
+    </div>
+    <div class="group2 col-sm-3 col-md-3">
+      <span class="glyphicon glyphicon-time"></span>
+      <%= l post.created_at, format: :long %><br>
+      <span class="glyphicon glyphicon-user"></span>
+      <%= post.user.first_name %> <%= post.user.last_name %><br>
+      <span class="glyphicon"></span>
+        <% if post.comments.count >= 1 %>
+            <%= image_tag('comments.jpg', size: '20') %>
+            <%= post.comments.count %>
+        <% else %>
+            <%= image_tag('comments.jpg', size: '20') %>
+            <%= post.comments.count %>
+        <% end %><br><br>
+      <span class="text-left"></span>
+
+        <% if post.user.id == current_user.id %>
+            <%= link_to t('edit'), edit_post_path(post), class: 'btn btn-info' %>
+            <%= link_to t('delete'), post_path(post), class: 'btn btn-info',
+                        method: :delete, data: { confirm: t('Are you sure?') } %>
+        <% end %>
+
+    </div>
+  </div>
+  <br>
+  <p class="lead"> <%= truncate(post.body, length: 300) %> Aries is the first sign of the zodiac, and that's pretty much how those born under this sign see themselves: first. Aries are the leaders of the pack, first in line to get things going. Whether or not everything gets done is another question altogether, for an Aries prefers to initiate rather than to complete. Do you have a project needing a kick-start? Call an Aries, by all means. The leadership displayed by Aries is most impressive, so don't be surprised if they can rally the troops against seemingly insurmountable odds.</p>
+  <div class="group1 col-sm-9 col-md-9">
+
+  </div>
+  <div class="group2 col-sm-3 col-md-3">
+    <span class="text-right"></span>
+    <a href="singlepost.html" class="text-right" >
+      <%= link_to 'continue reading...', post, class: 'btn btn-info' %>
+    </a>
+  </div>
+  <br>
+  <br>
+</article>

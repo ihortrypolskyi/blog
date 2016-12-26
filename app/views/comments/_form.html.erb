@@ -1,10 +1,14 @@
-<%= form_for([@post, @comment || @post.comments.build]) do |f| %>
-    <%= f.hidden_field :parent_id %>
-    <div class="field">
-      <%= f.text_area :body, placeholder: t('leave your comment here') %>
-    </div>
-    <div class="actions">
-      <%= f.submit t('Add comment') %>
-    </div>
-<% end %>
+<div class="well">
+
+    <%= form_for([@post, @comment || @post.comments.build]) do |f| %>
+      <%= f.hidden_field :parent_id %>
+        <%= f.text_area :body, placeholder: t('leave your comment here'), class: "form-control" %>
+        <br>
+        <%= f.submit t('Add comment'), class:"btn btn-info" %>
+  <% end %>
+
+</div>
+
+
+
 

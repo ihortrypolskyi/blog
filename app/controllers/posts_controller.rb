@@ -7,6 +7,7 @@ class PostsController < ApplicationController
     @posts = Post.all.includes(:comments)
     @comments = Comment.all
     @user = current_user
+    @post = current_user.posts.build
   end
 
   def show

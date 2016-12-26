@@ -10,7 +10,44 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require scaffolds.scss
- *= require_self
- */
+ /**= require scaffolds.scss*/
+ /**= require_self*/
+ /**!*/
 
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body {
+  margin-top: 75px;
+}
+
+.no_comments {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+//#comments-section {
+//  display: none;
+//}
+
+@media (min-width: 768px) {
+  .group2 {
+    text-align: right;
+  }
+}
+
+footer {
+  margin: 10px 0;
+}
+
+#comments, #comments li {
+  margin: 0;
+}
+
+#comments li {
+  list-style: none;
+}
+
+.row-fluid {
+  word-wrap: break-word;
+}

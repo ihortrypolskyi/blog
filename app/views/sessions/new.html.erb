@@ -1,18 +1,25 @@
 <p id="notice"><%= notice %></p>
-<div class="login">
-	<div class="container">
-		<div class="form">
-			<h1><%= t('Welcome to the blog!') %></h1>
-    				<%= form_for(:session, url: login_path) do |f| %>
-           		<%= f.email_field :email, :placeholder => t('email') %><br>
-							<%= f.password_field :password, :placeholder => t('password') %><br>
-							<%= f.submit t('Log in'), class: "btn-submit" %>
-				<% end %><br>
-				<nav><%= link_to t("Haven't got account?"), 'signup' %></nav>
-    	</div>
-	</div>
+<div class="container">
+
+  <div class="row">
+    <div class="col-md-9 col-sm-9 col-xs-9">
+      <h1><%= t('Welcome to the blog!') %></h1>
+    </div>
+
+    <div class="col-md-3 col-sm-3 col-xs-3">
+      <div class="well">
+              <h1><%= t('Log in') %></h1>
+              <%= form_for(:session, url: login_path) do |f| %>
+                  <%= f.email_field :email, :placeholder => t('email'), type:"email", class:"form-control" %><br>
+                  <%= f.password_field :password, :placeholder => t('password'), class:"form-control" %><br>
+                  <%= f.submit t('Log in'), type: "submit", class:"btn btn-info" %>
+              <% end %><br>
+              <nav><%= link_to t("Haven't got account?"), 'signup' %></nav>
+       </div>
+    </div>
+  </div>
+  <% if flash[:alert] %>
+      <div id="error_explanation"><%= alert %></div>
+  <% end %>
 </div>
 
-<% if flash[:alert] %>
-    <div id="error_explanation"><%= alert %></div>
-<% end %>

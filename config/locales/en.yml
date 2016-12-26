@@ -24,8 +24,8 @@ en:
   New post: 'New post'
   All posts: 'Home'
   Log out: 'Log out'
-  Login: 'Login'
-  Signup: 'Sign up'
+  Login: 'Log In'
+  Signup: 'Sign Up'
 
   Create a New Post: 'Create a new post'
   submit: 'Submit'
@@ -35,10 +35,10 @@ en:
 
   Closer look at the post: 'Closer look at the post'
 
-  posts_list: 'Posts list'
+  posts_list: 'Post List'
   title: 'Title'
   content: 'Content'
-  user: 'Author'
+  user: 'Author: '
   show: 'Show'
   edit: 'Edit'
   delete: 'Delete'
@@ -83,7 +83,7 @@ en:
         admin:
           signed_up: 'Welcome! You have signed up successfully.'
 
-  Number of comments: 'Number of comments'
+  Number of comments: 'Number of comments: '
   comments: 'comments:'
   see comments: 'see comments:'
   Are you sure?: 'Are you sure?'
