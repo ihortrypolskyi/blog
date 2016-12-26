@@ -4,10 +4,13 @@ class PostsController < ApplicationController
   before_action :update_views
 
   def index
-    @posts = Post.all.includes(:comments)
+    # @posts = Post.all.includes(:comments)
+    @posts = Post.paginate(:page => params[:page], per_page: 2)
     @comments = Comment.all
     @user = current_user
     @post = current_user.posts.build
+    @side_list = Post.all.sample(5)
+
   end
 
   def show
