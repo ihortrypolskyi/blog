@@ -2,6 +2,7 @@ class PostsController < ApplicationController
   before_action :require_user, only: [:index, :show, :edit, :update]
   before_action :set_post, only: [:show, :edit, :update, :destroy]
   before_action :update_views
+  skip_before_action :verify_authenticity_token
 
   def index
     # @posts = Post.all.includes(:comments)
@@ -35,7 +36,7 @@ class PostsController < ApplicationController
           redirect_to posts_url, notice: 'Post was successfully created.'
         end
         format.json { render :index, status: :created, location: @post }
-        format.js { render 'create', status: :created, location: @post }
+        format.js
       else
         format.html { render :new }
         format.json { render json: @post.errors, status: :unprocessable_entity }
