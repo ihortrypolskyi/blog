@@ -23,7 +23,7 @@
 ru:
   Ru: 'Рус'
   New post: 'Создать пост'
-  All posts: 'Все посты'
+  All posts: 'На главную'
   Log out: 'Выйти'
   Login: 'Войти'
   Sign up: 'Новый аккаунт'
@@ -98,6 +98,8 @@ ru:
   Reply: 'ответить'
   Recommended for reading: 'Рекомендуем прочитать'
   read this post: 'читать дальше...'
+  up_to_200: 'до 200 символов'
+  up_to_4000: 'до 4000 символов'
 
 
 

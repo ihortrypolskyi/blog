@@ -1,5 +1,5 @@
 <div class="container">
-  <article>
+  <article id="post_<%= post.id %>">
 
   <h1><%= @post.title %></h1>
 
@@ -19,8 +19,26 @@
   <div class="group1 col-sm-9 col-md-9">
     <span class="text-left"></span>
     <a href="singlepost.html" class="text-left">
-
         <% if @post.user.id == current_user.id %>
+          <div class="text-center">
+            <button class="btn btn-info btn-lg" data-toggle="modal" data-target="#editPost">
+              <%= t('edit') %>
+            </button>
+          </div>
+
+          <div class="modal fade" id="editPost" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h4 class="modal-title" id="myModalLabel"><%= t('new_post') %></h4>
+                </div>
+                <div class="modal-body">
+                    <%= render 'form', post: @post %>
+                </div>
+              </div>
+            </div>
+          </div>
             <%= link_to t('edit'), edit_post_path(@post), class: 'btn btn-info' %>
             <%= link_to t('delete'), post_path(@post), class: 'btn btn-info ',
                         method: :delete, data: { confirm: t('Are you sure?') } %>
@@ -33,9 +51,8 @@
       <%= link_to t('home'), posts_path, class: 'btn btn-info' %>
     </a>
   </div>
-  <br><br><br>
 
-<%= render 'comments/form' %>
+<p class="comment_form"><%= render 'comments/form' %></p>
 <%= t('Number of comments') %><%= @post.comments.count %>
 <%= nested_comments @comments.arrange{ order(created_at: :desc) } %>
   </article>

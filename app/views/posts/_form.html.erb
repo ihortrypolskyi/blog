@@ -12,12 +12,12 @@
 
   <div class="field">
     <%= f.label t('title') %>
-    <%= f.text_field :title, class:"form-control post_title" %>
+    <%= f.text_field :title , :placeholder => t('up_to_200'), class:"form-control post_title" %>
   </div>
 
   <div class="field">
     <%= f.label t('content') %>
-    <%= f.text_area :body, class:"form-control post_body" %>
+    <%= f.text_area :body, :placeholder => t('up_to_4000'), class:"form-control post_body" %>
   </div>
 
     <div class="field">
