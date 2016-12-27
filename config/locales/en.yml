@@ -68,7 +68,7 @@ en:
 
   users:
       create:
-          alert: 'Requirements: first & last name length 2-20 symbols, password length 6-20 symbols.'
+          alert: 'Each field should contain 3-30 characters.'
 
   sessions:
       create:

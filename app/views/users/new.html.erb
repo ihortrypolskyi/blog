@@ -1,25 +1,24 @@
-<!--<p id="notice"><%= notice %></p>-->
-<div class="container">
+<div class="jumbotron">
+  <div class="container">
 
-  <div class="row">
-    <div class="col-md-9 col-sm-9 col-xs-9">
-      <h1><%= t('Fill in the form')%></h1>
-    </div>
-
-    <div class="col-md-3 col-sm-3 col-xs-3">
-      <div class="well">
-        <form role="form">
-          <h1><%= t('Sign up')%></h1>
-          <%= form_for(@user) do |f| %>
-              <%= f.text_field :first_name, :placeholder => t('first_name'), class:"form-control" %><br>
-              <%= f.text_field :last_name, :placeholder => t('last_name'), class:"form-control" %><br>
-              <%= f.email_field :email, :placeholder => t('email'), type:"email", class:"form-control" %><br>
-              <%= f.password_field :password, :placeholder => t('password'), class:"form-control" %><br>
-              <%= f.submit t('create_an_account'), type: "submit", class:"btn btn-info" %><br>
-          <% end %>
-        </form>
+    <div class="row">
+      <div class="col-md-9 col-sm-9 col-xs-9">
+        <h1 class="welcome_sentence"><%= t('Fill in the form')%></h1>
       </div>
-     </div>
+
+      <div class="col-md-3 col-sm-3 col-xs-3">
+        <div class="well">
+            <h2><%= t('Sign up')%></h2>
+            <%= form_for(@user) do |f| %>
+                <%= f.text_field :first_name, :placeholder => t('first_name'), class:"form-control" %><br>
+                <%= f.text_field :last_name, :placeholder => t('last_name'), class:"form-control" %><br>
+                <%= f.email_field :email, :placeholder => t('email'), type:"email", class:"form-control" %><br>
+                <%= f.password_field :password, :placeholder => t('password'), class:"form-control" %><br>
+                <%= f.submit t('create_an_account'), type: "submit", class:"btn btn-info" %><br>
+            <% end %>
+        </div>
+       </div>
+    </div>
   </div>
-</div>
+  </div>
 
