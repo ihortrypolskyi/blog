@@ -1,39 +1,55 @@
-<article id="post_<%= post.id %>">
-  <hr>
-  <h2><%= link_to (post.title), post %></h2>
-  <div class="row">
-    <div class="group1 col-sm-8 col-md-8">
-      <img class="large_image" class="img-responsive">
-      <%= image_tag post.image.url(:thumb) if post.image? %>
-    </div>
-    <div class="group2 col-sm-4 col-md-4">
-      <span class="glyphicon glyphicon-time"></span>
-      <%= l post.created_at, format: :long %><br>
-      <span class="glyphicon glyphicon-user"></span>
-      <%= post.user.first_name %> <%= post.user.last_name %><br>
-      <span class="glyphicon"></span>
-        <% if post.comments.count >= 1 %>
-            <%= image_tag('comments.jpg', size: '20') %>
-            <%= post.comments.count %>
-        <% else %>
-            <%= image_tag('comments.jpg', size: '20') %>
-            <%= post.comments.count %>
-        <% end %><br><br>
-      <span class="text-left"></span>
-
+<div class="blog-main box">
+  <article>
+    <hr>
+    <h2><%= link_to (post.title), post %></h2>
+    <div class="row">
+      <div class="group1 col-sm-8 col-md-8">
+        <img class="large_image" class="img-responsive">
+        <%= image_tag post.image.url(:thumb) if post.image? %>
+      </div>
+      <div class="group2 col-sm-4 col-md-4">
+        <span class="glyphicon glyphicon-time"></span>
+        <%= l post.created_at, format: :long %><br>
+        <span class="glyphicon glyphicon-user"></span>
+        <%= post.user.first_name %> <%= post.user.last_name %><br>
+        <span class="glyphicon"></span>
+          <% if post.comments.count >= 1 %>
+              <%= image_tag('comments.jpg', size: '20') %>
+              <%= post.comments.count %>
+          <% else %>
+              <%= image_tag('comments.jpg', size: '20') %>
+              <%= post.comments.count %>
+          <% end %><br><br>
+        <span class="text-left"></span>
         <% if post.user.id == current_user.id %>
-            <%= link_to t('edit'), edit_post_path(post), class: 'btn btn-info' %>
+            <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myupdatepost_<%= post.id %>">
+              <%= t('edit') %>
+            </button>
             <%= link_to t('delete'), post_path(post), class: 'btn btn-info',
                         method: :delete, data: { confirm: t('Are you sure?') } %>
         <% end %>
+        <span class="text-right"></span>
+        <a>
+          <%= link_to t('read this post'), post, class: 'btn btn-info', id: 'continue_reading' %>
+        </a>
 
-      <span class="text-right"></span>
-      <a>
-        <%= link_to t('read this post'), post, class: 'btn btn-info', id: 'continue_reading' %>
-      </a>
+      </div>
+    </div>
+    <br>
+    <p class="lead"> <%= truncate(post.body, length: 245) %><%= link_to '.....', post %></p>
+  </article>
 
+  <div class="modal fade" id="myupdatepost_<%= post.id %>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title" id="myModalLabel"><%= t('edit_post') %></h4>
+        </div>
+        <div class="modal-body">
+          <%= render 'form', post: post %>
+        </div>
+      </div>
     </div>
   </div>
-  <br>
-  <p class="lead"> <%= truncate(post.body, length: 245) %><%= link_to '.....', post %></p>
-</article>
+</div>

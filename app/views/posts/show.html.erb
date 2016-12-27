@@ -1,5 +1,5 @@
-<div class="container">
-  <article id="post_<%= post.id %>">
+<div class="container" id="post_show">
+  <article id="post_<%= @post.id %>">
 
   <h1><%= @post.title %></h1>
 
@@ -18,32 +18,28 @@
   <p class="lead"><%= @post.body %></p>
   <div class="group1 col-sm-9 col-md-9">
     <span class="text-left"></span>
-    <a href="singlepost.html" class="text-left">
-        <% if @post.user.id == current_user.id %>
-          <div class="text-center">
-            <button class="btn btn-info btn-lg" data-toggle="modal" data-target="#editPost">
-              <%= t('edit') %>
-            </button>
-          </div>
+    <% if @post.user.id == current_user.id %>
+        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myupdatepost_<%= @post.id %>">
+        <%= t('edit') %>
+        </button>
+        <%= link_to t('delete'), post_path(@post), class: 'btn btn-info',
+                    method: :delete, data: { confirm: t('Are you sure?') } %>
 
-          <div class="modal fade" id="editPost" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                  <h4 class="modal-title" id="myModalLabel"><%= t('new_post') %></h4>
-                </div>
-                <div class="modal-body">
-                    <%= render 'form', post: @post %>
-                </div>
-              </div>
-            </div>
+    <div class="modal fade" id="myupdatepost_<%= @post.id %>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="myModalLabel"><%= t('edit_post') %></h4>
           </div>
-            <%= link_to t('edit'), edit_post_path(@post), class: 'btn btn-info' %>
-            <%= link_to t('delete'), post_path(@post), class: 'btn btn-info ',
-                        method: :delete, data: { confirm: t('Are you sure?') } %>
-        <% end %>
-    </a>
+          <div class="modal-body">
+            <%= render 'form', post: @post %>
+          </div>
+        </div>
+      </div>
+    </div>
+    <% end %>
+
   </div>
   <div class="group2 col-sm-3  col-md-3">
     <span class="text-right"></span>
