@@ -1,57 +1,44 @@
 <div class="container" id="post_show">
-  <article id="post_<%= @post.id %>">
 
-  <h1><%= @post.title %></h1>
+<%= render 'posts/show', post: @post %>
 
-  <div class="row">
-    <div class="group1 col-sm-9 col-md-9">
-      <span class="glyphicon glyphicon-user "></span>
-      <%= @post.user.first_name %> <%= @post.user.last_name %>
-    </div>
-      <span class="glyphicon glyphicon-time"></span>
-      <%= l @post.created_at, format: :long %>
-  </div>
-  <hr>
-  <img class="large_image" class="img-responsive">
-  <%= image_tag @post.image.url(:large) if @post.image? %>
-  <br><br>
-  <p class="lead"><%= @post.body %></p>
   <div class="group1 col-sm-9 col-md-9">
     <span class="text-left"></span>
     <% if @post.user.id == current_user.id %>
         <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myupdatepost_<%= @post.id %>">
-        <%= t('edit') %>
+          <%= t('edit') %>
         </button>
         <%= link_to t('delete'), post_path(@post), class: 'btn btn-info',
                     method: :delete, data: { confirm: t('Are you sure?') } %>
 
-    <div class="modal fade" id="myupdatepost_<%= @post.id %>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-            <h4 class="modal-title" id="myModalLabel"><%= t('edit_post') %></h4>
-          </div>
-          <div class="modal-body">
-            <%= render 'form', post: @post %>
+        <div class="modal fade" id="myupdatepost_<%= @post.id %>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel"><%= t('edit_post') %></h4>
+              </div>
+              <div class="modal-body">
+                <%= render 'form', post: @post %>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
     <% end %>
 
   </div>
-  <div class="group2 col-sm-3  col-md-3">
-    <span class="text-right"></span>
-    <a href="singlepost.html" class="text-right" >
-      <%= link_to t('home'), posts_path, class: 'btn btn-info' %>
-    </a>
-  </div>
+
+<div class="group2 col-sm-3  col-md-3">
+  <span class="text-right"></span>
+  <a href="singlepost.html" class="text-right" >
+    <%= link_to t('home'), posts_path, class: 'btn btn-info' %>
+  </a>
+</div>
 
 <p class="comment_form"><%= render 'comments/form' %></p>
-<%= t('Number of comments') %><%= @post.comments.count %>
-<%= nested_comments @comments.arrange{ order(created_at: :desc) } %>
-  </article>
+<p><%= t('Number of comments') %><%= @post.comments.count %></p>
+  <p><%= nested_comments @comments.arrange{ order(created_at: :desc) } %></p>
+
 </div>
 
 
