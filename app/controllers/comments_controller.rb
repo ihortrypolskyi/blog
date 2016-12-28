@@ -6,17 +6,23 @@ class CommentsController < ApplicationController
   def new
     @comment = Comment.new(parent_id: params[:parent_id])
     @comment.parent_id = params[:parent_id]
+      # respond_to do |format|
+      #   # format.js { render 'new', status: :created, location: @post }
+      #     format.html { redirect_to @post }
+      # end
   end
 
   def create
     @comment = @post.comments.create(comment_params)
     @comment.user_id = current_user.id
-    @comment.save
+    respond_to do |format|
+      if @comment.save
+        # format.js { render 'create', status: :created, location: @post }
+        format.html { redirect_to @post }
 
-    if @comment.save
-      redirect_to @post
-    else
-      render 'edit'
+      else
+        render 'new'
+      end
     end
   end
 
