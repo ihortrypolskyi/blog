@@ -5,7 +5,7 @@
       <hr>
         <em><%= comment.body %></em>
         <%= link_to t('Reply'), new_post_comment_path(comment.post, parent_id: comment),
-                                           class:"btn btn-info btn-xs" %>
+                                           class:'btn btn-info btn-xs' %>
       </p>
       <p class="pull-right">
         <span class="glyphicon glyphicon-time"></span>
@@ -14,25 +14,23 @@
         <%= comment.user.first_name %> <%= comment.user.last_name %></p>
 
       <p class="pull-left">
-
-         <p><%= link_to like_post_comment_path(comment.post, comment), class: 'vote_link', method: :put do %>
+         <p><%= link_to like_post_comment_path(comment.post, comment), class: 'vote_link',remote: true, method: :put do %>
               <%= image_tag('upvote.png', size: '30') %>
-              <%= comment.get_upvotes.size %>
-          <%	end  %>
+               <span id="upvote_comment_<%= comment.id%>"><%= comment.get_upvotes.size %></span>
+           <%	end  %>
 
-         <%= link_to unlike_post_comment_path(comment.post, comment), class: 'vote_link', method: :put do %>
+            <%= link_to unlike_post_comment_path(comment.post, comment), class: 'vote_link', remote: true, method: :put do %>
                 <%= image_tag('downvote.png', size: '30') %>
-          <%= comment.get_downvotes.size %>
+               <span id="downvote_comment_<%= comment.id%>"><%= comment.get_downvotes.size %></span>
             <%	end  %></p>
 
-      <a href="singlepost.html" class="text-left">
+            <a href="singlepost.html" class="text-left">
             <% if comment.user_id == current_user.id %>
                 <%= link_to t('edit'), edit_post_comment_path(comment.post, comment), class: 'btn btn-default btn-xs' %>
                 <%= link_to t('delete'), post_comment_path(comment.post, comment), class: 'btn btn-default btn-xs',
                                 method: :delete, data: { confirm: t('Are you sure?') } %>
             <% end %>
-
-      </a>
+            </a>
     </div>
   </li>
   <!--</ul>-->

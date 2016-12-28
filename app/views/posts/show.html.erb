@@ -31,8 +31,7 @@
 <div class="group2 col-sm-3  col-md-3">
   <span class="text-right"></span>
   <a href="singlepost.html" class="text-right" >
-    <%= link_to t('Back to posts'), request.referer.present? ? request.referer : default_path, class: 'btn btn-info' %>
-
+    <%= link_to t('Back to posts'), :back , class: 'btn btn-info' %>
   </a>
 </div>
 

@@ -39,16 +39,15 @@ class CommentsController < ApplicationController
   def upvote
     @comment.upvote_from current_user
     respond_to do |format|
-      format.html {redirect_to @post}
-      format.js
+      format.js { render 'vote', status: :created, location: @post }
     end
   end
 
   def downvote
     @comment.downvote_from current_user
     respond_to do |format|
-      format.html {redirect_to @post}
-      format.js
+
+      format.js { render 'vote', status: :created, location: @post }
     end
   end
 
