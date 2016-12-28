@@ -69,10 +69,12 @@ en:
   users:
       create:
           alert: 'Each field should contain 3-30 characters.'
+          notice: 'You have successfully signed up'
 
   sessions:
       create:
           alert: 'The account with specified email and password does not exist.'
+          notice: 'You have successfully logged in'
       destroy:
           notice: 'You have successfully logged out'
 

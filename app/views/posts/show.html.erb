@@ -25,20 +25,18 @@
           </div>
         </div>
     <% end %>
-
   </div>
 
-<div class="group2 col-sm-3  col-md-3">
-  <span class="text-right"></span>
-  <a href="singlepost.html" class="text-right" >
-    <%= link_to t('Back to posts'), :back , class: 'btn btn-info' %>
-  </a>
-</div>
+  <div class="group2 col-sm-3  col-md-3">
+    <span class="text-right"></span>
+    <a href="singlepost.html" class="text-right" >
+      <%= link_to t('Back to posts'), :back , class: 'btn btn-info' %>
+    </a>
+  </div>
 
-<p class="comment_form"><%= render 'comments/form' %></p>
-<p><%= t('Number of comments') %><%= @post.comments.count %></p>
-  <p><%= nested_comments @comments.arrange{ order(created_at: :desc) } %></p>
-
+    <p class="comment_form"><%= render 'comments/form' %></p>
+    <p><%= t('Number of comments') %><%= @post.comments.count %></p>
+    <p><%= nested_comments @comments.arrange{ order(created_at: :desc) } %></p>
 </div>
 
 

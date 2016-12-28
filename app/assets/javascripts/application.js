@@ -16,23 +16,3 @@
 //= require turbolinks
 //= require_tree
 //= require jquery.remotipart
-
-
-$(function() {
-    $('.comments-link').on('click', function(e) {
-        e.preventDefault();
-          $('.comments-section').toggle();
-    });
-});
-
-
-
-$(function(){
-    $('p#image').fadeOut(900).fadeIn(900);
-});
-
-$(function() {
-    $('.vote_link').on('click', function(e) {
-        e.preventDefault();
-    });
-});

@@ -21,6 +21,5 @@ class User < ApplicationRecord
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z/i
   validates :email, presence: true, length: { in: 3..30}, format: { with: VALID_EMAIL_REGEX }, uniqueness: true
   before_save { email.downcase! }
-  #castom validation examp: validates_presence_of :body, if: lambda {|post| post.title.length > 10 }
   acts_as_voter
   end

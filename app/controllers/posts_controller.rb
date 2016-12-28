@@ -5,7 +5,6 @@ class PostsController < ApplicationController
   skip_before_action :verify_authenticity_token
 
   def index
-    # @posts = Post.all.includes(:comments)
     @posts = Post.paginate(:page => params[:page], per_page: 2)
     @comments = Comment.all
     @user = current_user
@@ -26,8 +25,6 @@ class PostsController < ApplicationController
   end
 
   def create
-    # @post = Post.new(post_params)
-    # @post.user = current_user
     @post = current_user.posts.build(post_params)
 
     respond_to do |format|

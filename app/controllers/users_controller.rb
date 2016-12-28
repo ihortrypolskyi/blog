@@ -8,6 +8,7 @@ class UsersController < ApplicationController
     if @user.save
       session[:user_id] = @user.id
       redirect_to '/posts'
+      flash[:notice] = t('.notice')
     else
       flash[:alert] = t('.alert')
       redirect_to '/signup'

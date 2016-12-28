@@ -2,9 +2,9 @@
 
     <%= form_for([@post, @comment || @post.comments.build]) do |f| %>
       <%= f.hidden_field :parent_id %>
-        <%= f.text_area :body, placeholder: t('leave your comment here'), class: "form-control" %>
+        <%= f.text_area :body, placeholder: t('leave your comment here'), class: 'form-control' %>
         <br>
-        <%= f.submit t('Add a comment'), class:"btn btn-info" %>
+        <%= f.submit t('Add a comment'), class:'btn btn-info' %>
   <% end %>
 
 </div>
