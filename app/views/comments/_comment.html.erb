@@ -1,11 +1,11 @@
 <ul id="comments" class="comments">
   <li class="comment">
-    <div class="clearfix" class="comment<%= comment.id%>" style="padding-left: 10px;">
+    <div class="clearfix">
       <p>
       <hr>
         <em><%= comment.body %></em>
-        <%= link_to t('Reply'), new_post_comment_path(comment.post, parent_id: comment),
-                                           class:'btn btn-info btn-xs' %>
+        <%= link_to t('Reply'), new_post_comment_path(comment.post, parent_id: comment), remote: true,
+                                           class:'btn btn-info btn-xs'%>
       </p>
       <p class="pull-right">
         <span class="glyphicon glyphicon-time"></span>
@@ -16,12 +16,12 @@
       <p class="pull-left">
          <p><%= link_to like_post_comment_path(comment.post, comment), class: 'vote_link',remote: true, method: :put do %>
               <%= image_tag('upvote.png', size: '30') %>
-               <span id="upvote_comment_<%= comment.id%>"><%= comment.get_upvotes.size %></span>
+               <span id="upvote_comment_<%= comment.id %>"><%= comment.get_upvotes.size %></span>
            <%	end  %>
 
             <%= link_to unlike_post_comment_path(comment.post, comment), class: 'vote_link', remote: true, method: :put do %>
                 <%= image_tag('downvote.png', size: '30') %>
-               <span id="downvote_comment_<%= comment.id%>"><%= comment.get_downvotes.size %></span>
+               <span id="downvote_comment_<%= comment.id %>"><%= comment.get_downvotes.size %></span>
             <%	end  %></p>
 
             <a href="singlepost.html" class="text-left">
@@ -32,5 +32,10 @@
             <% end %>
             </a>
     </div>
+
+    <div class="reply_form_<%= comment.id%> hidden_com_form" id="reply_<%= comment.id%>">
+      <%= render 'comments/form' %>
+    </div>
+    <div></div>
   </li>
   <!--</ul>-->

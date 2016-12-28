@@ -1,7 +1,9 @@
+<div class="container">
 <%= render 'form', comment: @comment %><br>
 <tr>
   <nav>
-     <td><%= link_to t('Back'), posts_path %></td>
+     <td><%= link_to t('Back'), :back, class: 'btn btn-info btn-xs' %></td>
   </nav>
 </tr>
+</div>
 

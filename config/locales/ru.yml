@@ -81,6 +81,14 @@ ru:
        destroy:
            notice: 'Вы успешно вышли из аккаунта'
 
+  comments:
+       create:
+           notice: 'Ваш комментарий добаволен.'
+       destroy:
+           notice: 'Ваш комментарий удален.'
+       update:
+           notice: 'Ваш комментарий обновлен'
+
   active_admin.dashboard: 'Админка'
 
   devise:
@@ -102,7 +110,7 @@ ru:
   read this post: 'читать пост...'
   up_to_200: 'до 200 символов'
   up_to_4000: 'до 4000 символов'
-  Back to posts: 'К постам'
+  Back to posts: 'Назад'
 
 
 

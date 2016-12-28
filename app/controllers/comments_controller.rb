@@ -6,10 +6,10 @@ class CommentsController < ApplicationController
   def new
     @comment = Comment.new(parent_id: params[:parent_id])
     @comment.parent_id = params[:parent_id]
-      # respond_to do |format|
-      #   # format.js { render 'new', status: :created, location: @post }
-      #     format.html { redirect_to @post }
-      # end
+      respond_to do |format|
+        format.js { render 'new', status: :created, location: @post }
+        format.html { redirect_to @post }
+      end
   end
 
   def create
@@ -17,9 +17,9 @@ class CommentsController < ApplicationController
     @comment.user_id = current_user.id
     respond_to do |format|
       if @comment.save
-        # format.js { render 'create', status: :created, location: @post }
+        format.js { render 'create', status: :created, location: @post }
         format.html { redirect_to @post }
-
+        flash[:notice] = t('.notice')
       else
         render 'new'
       end
@@ -32,6 +32,7 @@ class CommentsController < ApplicationController
   def update
     if @comment.update(comment_params)
       redirect_to @post
+      flash[:notice] = t('.notice')
     else
       render 'edit'
     end
@@ -40,6 +41,7 @@ class CommentsController < ApplicationController
   def destroy
     @comment.destroy
     redirect_to @post
+    flash[:notice] = t('.notice')
   end
 
   def upvote
