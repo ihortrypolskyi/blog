@@ -38,12 +38,18 @@ class CommentsController < ApplicationController
 
   def upvote
     @comment.upvote_from current_user
-    redirect_to @post
+    respond_to do |format|
+      format.html {redirect_to @post}
+      format.js
+    end
   end
 
   def downvote
     @comment.downvote_from current_user
-    redirect_to @post
+    respond_to do |format|
+      format.html {redirect_to @post}
+      format.js
+    end
   end
 
   private
