@@ -2,7 +2,6 @@ $('#comments_list').fadeOut(500, function(){
     $(this).remove();
     $("#nestedcomments_<%= @post.id %>").append("<%= j render partial: 'posts/nestedcomment',
      locals: {comment: @comment} %>");
-
 });
 
 

@@ -44,6 +44,7 @@ class CommentsController < ApplicationController
       format.js
       format.html { redirect_to @post }
     end
+
   end
 
   def upvote
