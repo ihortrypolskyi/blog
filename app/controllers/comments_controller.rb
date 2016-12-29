@@ -40,8 +40,10 @@ class CommentsController < ApplicationController
 
   def destroy
     @comment.destroy
-    redirect_to @post
-    flash[:notice] = t('.notice')
+    respond_to do |format|
+      format.js
+      format.html { redirect_to @post }
+    end
   end
 
   def upvote
@@ -54,7 +56,6 @@ class CommentsController < ApplicationController
   def downvote
     @comment.downvote_from current_user
     respond_to do |format|
-
       format.js { render 'vote', status: :created, location: @post }
     end
   end

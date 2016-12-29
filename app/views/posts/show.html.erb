@@ -36,7 +36,9 @@
 
     <p class="comment_form"><%= render 'comments/form' %></p>
     <p><%= t('Number of comments') %><%= @post.comments.count %></p>
-    <div id="one"><%= nested_comments @comments.arrange{ order(created_at: :desc) } %></div>
+    <div id="nestedcomments_<%= @post.id %>">
+      <%= render 'nestedcomment' %>
+    </div>
 </div>
 
 

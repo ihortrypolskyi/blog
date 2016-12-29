@@ -1,6 +1,6 @@
 <div class="well">
 
-    <%= form_for([@post, @comment || @post.comments.build]) do |f| %>
+    <%= form_for([@post, @comment || @post.comments.build], remote: true) do |f| %>
       <%= f.hidden_field :parent_id %>
         <%= f.text_area :body, placeholder: t('leave your comment here'), class: 'form-control' %>
         <br>
