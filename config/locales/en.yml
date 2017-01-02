@@ -62,7 +62,7 @@ en:
       update:
           notice: 'Post was successfully updated.'
       destroy:
-          notice: 'Post was successfully destroyed.'
+          notice: 'Post was successfully deleted.'
 
   Study ROR with GeekHub!!! : 'Study ROR with GeekHub!!!'
 
@@ -79,12 +79,12 @@ en:
           notice: 'You have successfully logged out'
 
   comments:
-       create:
-           notice: 'Your comment has been added.'
-       destroy:
-           notice: 'Your comment has been deleted.'
-       update:
-           notice: 'Your comment has been updated.'
+      create:
+          notice: 'Your comment has been added.'
+      destroy:
+          notice: 'Your comment has been deleted.'
+      update:
+          notice: 'Your comment has been updated.'
 
   active_admin.dashboard: 'active_admin.dashboard'
 

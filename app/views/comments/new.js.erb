@@ -1,6 +1,6 @@
-  if ($('.reply_form_<%= params[:parent_id] %>').hasClass("hidden_com_form")){
-      $('.reply_form_<%= params[:parent_id] %>').removeClass("hidden_com_form");
+  if ($('.reply_form_<%= params[:parent_id] %>').hasClass("hidden_element")){
+      $('.reply_form_<%= params[:parent_id] %>').removeClass("hidden_element");
       $('.reply_form_<%= params[:parent_id] %>').find('form').find('input[name*=comment]').attr("value",<%= params[:parent_id] %>);
   } else {
-      $('.reply_form_<%= params[:parent_id] %>').addClass("hidden_com_form");
+      $('.reply_form_<%= params[:parent_id] %>').addClass("hidden_element");
   }

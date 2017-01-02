@@ -25,17 +25,15 @@
             <%	end  %></p>
 
             <a href="singlepost.html" class="text-left">
-            <% if comment.user_id == current_user.id %>
-                <%= link_to t('edit'), edit_post_comment_path(comment.post, comment), class: 'btn btn-default btn-xs' %>
+            <% if comment.user_id == current_user.id && comment.rule_5_minutes? %>
                 <%= link_to t('delete'), post_comment_path(comment.post, comment), class: 'btn btn-default btn-xs',
                             remote: true, method: :delete, data: { confirm: t('Are you sure?') } %>
             <% end %>
             </a>
     </div>
 
-    <div class="reply_form_<%= comment.id%> hidden_com_form" id="reply_<%= comment.id%>">
+    <div class="reply_form_<%= comment.id%> hidden_element">
       <%= render 'comments/form' %>
     </div>
-    <div></div>
   </li>
-<!--</ul>-->
+</ul>

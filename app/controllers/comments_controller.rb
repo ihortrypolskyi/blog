@@ -7,7 +7,7 @@ class CommentsController < ApplicationController
     @comment = Comment.new(parent_id: params[:parent_id])
     @comment.parent_id = params[:parent_id]
       respond_to do |format|
-        format.js { render 'new', status: :created, location: @post }
+        format.js
         format.html { redirect_to @post }
       end
   end
@@ -17,9 +17,9 @@ class CommentsController < ApplicationController
     @comment.user_id = current_user.id
     respond_to do |format|
       if @comment.save
-        format.js { render 'create', status: :created, location: @post }
+        format.js
         format.html { redirect_to @post }
-        flash[:notice] = t('.notice')
+
       else
         render 'new'
       end
@@ -80,4 +80,6 @@ class CommentsController < ApplicationController
   def comment_params
     params.require(:comment).permit(:body, :user_id, :parent_id)
   end
+
+
 end

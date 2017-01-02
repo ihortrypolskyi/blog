@@ -1,6 +1,6 @@
 <div class="container" id="post_show">
 
-<%= render 'posts/show', post: @post %>
+  <%= render 'posts/show', post: @post %>
 
   <div class="group1 col-sm-9 col-md-9">
     <span class="text-left"></span>
@@ -11,7 +11,8 @@
         <%= link_to t('delete'), post_path(@post), class: 'btn btn-info',
                     method: :delete, data: { confirm: t('Are you sure?') } %>
 
-        <div class="modal fade" id="myupdatepost_<%= @post.id %>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal fade" id="myupdatepost_<%= @post.id %>" tabindex="-1"
+             role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
@@ -31,17 +32,13 @@
     <span class="text-right"></span>
     <a href="singlepost.html" class="text-right" >
       <%= link_to t('Back to posts'), :back , class: 'btn btn-info' %>
+      <%= link_to t('All posts'), '/', class: 'btn btn-info' %>
     </a>
   </div>
 
-    <p class="comment_form"><%= render 'comments/form' %></p>
-    <p><%= t('Number of comments') %><%= @post.comments.count %></p>
-    <div id="nestedcomments_<%= @post.id %>">
-      <%= render 'nestedcomment' %>
-    </div>
+  <p class="comment_form"><%= render 'comments/form' %></p>
+
+  <div id="post-comments_<%= @post.id %>">
+    <%= render 'posts/comments_list' %>
+  </div>
 </div>
-
-
-
-
-

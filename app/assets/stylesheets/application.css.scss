@@ -26,9 +26,6 @@ body {
   filter: alpha(opacity=50);
 }
 
-//#comments-section {
-//  display: none;
-//}
 
 @media (min-width: 768px) {
   .group2 {
@@ -38,10 +35,6 @@ body {
 
 footer {
   margin: 10px 0;
-}
-
-#comments, #comments li {
-  margin: 0;
 }
 
 #comments li {
@@ -82,10 +75,14 @@ footer {
   height: 250px;
 }
 
-.hidden_com_form {
-    display: none;
+.hidden_element {
+  display: none;
 }
 
 .col-md-4 {
   margin-top: 19px;
+}
+
+.nested_comments {
+  margin-left: 30px;
 }
