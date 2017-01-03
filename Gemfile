@@ -26,6 +26,7 @@ gem 'bootstrap-sass',  '~> 3.3.6'
 gem 'will_paginate',   '3.1.0'
 gem 'bootstrap-will_paginate', '0.0.10'
 gem 'remotipart',       '~> 1.2'
+gem 'rails_best_practices'
 
 group :development, :test do
   gem 'sqlite3', '1.3.12'

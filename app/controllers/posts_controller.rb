@@ -22,6 +22,7 @@ class PostsController < ApplicationController
   end
 
   def edit
+    @post = current_user.posts.find(params[:id])
   end
 
   def create
@@ -46,7 +47,6 @@ class PostsController < ApplicationController
         format.html { redirect_to @post, notice:  t('.notice') }
         format.json { render :show, status: :ok, location: @post }
         format.js
-
       else
         format.html { render :edit }
         format.json { render json: @post.errors, status: :unprocessable_entity }

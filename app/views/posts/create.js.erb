@@ -2,3 +2,4 @@ $("#newPost").modal('hide');
 $(".post_title").val('');
 $(".post_body").val('');
 $("#posts_list").prepend('<%= j render @post %>');
+$("html, body").animate({ scrollTop: 0 }, "slow");
