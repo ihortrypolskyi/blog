@@ -18,4 +18,8 @@ class Post < ApplicationRecord
   validates :body, presence: true, length: { maximum: 4000 }
   default_scope -> { order(created_at: :desc) }
   mount_uploader :image, ImageUploader
+
+  def to_param
+    [id, title.parameterize].join('-')
+  end
 end
