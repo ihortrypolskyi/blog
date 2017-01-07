@@ -71,6 +71,13 @@ class CommentsController < ApplicationController
     @comment = @post.comments.find(params[:id])
   end
 
+  def comment_owner
+    unless current_user == @comment.user
+      flash[:notice] = 'You have no permission'
+      redirect_to @post
+    end
+  end
+
   def comment_params
     params.require(:comment).permit(:body, :user_id, :parent_id)
   end
