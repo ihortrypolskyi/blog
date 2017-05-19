@@ -32,6 +32,10 @@ gem 'fog'
 group :development, :test do
   gem 'sqlite3', '1.3.12'
   gem 'byebug',  '9.0.6', platform: :mri
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
+  gem 'faker'
+  gem 'shoulda'
 end
 
 group :development do
