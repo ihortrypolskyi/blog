@@ -1,6 +1,6 @@
-heroku link: https://blooming-plateau-75742.herokuapp.com
+heroku link: https://ihorsblog.herokuapp.com
 
-heroku link to Dashboard: https://blooming-plateau-75742.herokuapp.com/admin
+heroku link to Dashboard: https://ihorsblog.herokuapp.com/admin
 email: admin@gmail.com
 password: admin123
 
