@@ -5,7 +5,7 @@ RSpec.describe User, type: :model do
 
     context 'presence:' do
       let(:user) {build(:user, first_name: nil)}
-      # (:user, first_name: nil, last_name: nil, email: nil, password_digest: nil )
+      # (:user, first_name: nil, last_name: nil, email: nil, password: nil )
       it 'should require user first_name'do
         expect(user).to_not be_valid
       end
@@ -17,7 +17,7 @@ RSpec.describe User, type: :model do
       it 'should require user email'do
         expect(user_2).to_not be_valid
       end
-      let(:user_3) {build(:user, password_digest: nil )}
+      let(:user_3) {build(:user, password: nil )}
       it 'should require user password'do
         expect(user_3).to_not be_valid
       end
@@ -44,17 +44,17 @@ RSpec.describe User, type: :model do
         expect(user_7).to_not be_valid
       end
 
-      let(:user_8) {build(:user, password_digest: 'Jo')}
+      let(:user_8) {build(:user, password: 'Jo')}
       it 'should require password length >= 3' do
         expect(user_8).to_not be_valid
       end
 
-      let(:user_9) {build(:user, password_digest: 'Joooooooooooooooooooooooooooooo')}
+      let(:user_9) {build(:user, password: 'Joooooooooooooooooooooooooooooo')}
       it 'should require password length <= 30' do
         expect(user_9).to_not be_valid
       end
 
-      let(:user_16) {build(:user, first_name: 'Johnna', last_name: 'Best', email: 'johndoes@gmail.com', password_digest: 'john')}
+      let(:user_16) {build(:user, first_name: 'Johnna', last_name: 'Best', email: 'johndoes@gmail.com', password: 'john')}
       it 'should require first_name, last_name, password length: {in: 3..30}' do
         expect(user_16).to be_valid
       end
@@ -77,10 +77,5 @@ RSpec.describe User, type: :model do
         expect(user_15).to_not be_valid
       end
     end
-
-    context 'should allow_nil for password:' do
-      it { should allow_value(nil).for(:password_digest) }
-    end
   end
-
 end

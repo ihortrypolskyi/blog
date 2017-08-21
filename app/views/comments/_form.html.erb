@@ -1,7 +1,7 @@
 <div class="well">
     <%= form_for([@post, @post.comments.build], remote: true) do |f| %>
       <%= f.hidden_field :parent_id %>
-        <%= f.text_area :body, placeholder: t('leave your comment here'), class: 'form-control' %>
+        <%= f.text_area :body, placeholder: t('leave your comment here'), class: 'form-control', required: :true %>
         <br>
         <%= f.submit t('Add a comment'), class:'btn btn-info' %>
   <% end %>

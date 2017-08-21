@@ -9,8 +9,11 @@ class UsersController < ApplicationController
       session[:user_id] = @user.id
       redirect_to '/posts'
       flash[:notice] = t('.notice')
-    else
+    elsif !@user.first_name.length.between?(3, 30) || !@user.last_name.length.between?(3, 30) || !@user.password.length.between?(3, 30)
       flash[:alert] = t('.alert')
+      redirect_to '/signup'
+    else
+      flash[:error] = t('.error')
       redirect_to '/signup'
     end
   end

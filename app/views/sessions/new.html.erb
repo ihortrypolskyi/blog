@@ -8,8 +8,8 @@
         <div class="well">
                 <h2><%= t('Log in') %></h2>
                 <%= form_for(:session, url: login_path) do |f| %>
-                    <%= f.email_field :email, :placeholder => t('email'), type:'email', class:'form-control' %><br>
-                    <%= f.password_field :password, :placeholder => t('password'), class:'form-control' %><br>
+                    <%= f.email_field :email, :placeholder => t('email'), type:'email', class:'form-control', required: :true %><br>
+                    <%= f.password_field :password, :placeholder => t('password'), class:'form-control', required: :true %><br>
                     <%= f.submit t('Log in'), type: 'submit', class:'btn btn-info' %>
                 <% end %><br>
                 <nav><%= link_to t("Haven't got account?"), 'signup' %></nav>

@@ -71,6 +71,7 @@ en:
       create:
           alert: 'Each field should contain 3-30 characters.'
           notice: 'You have successfully signed up'
+          error: 'First and last names are alredy been taken'
 
   sessions:
       create:
