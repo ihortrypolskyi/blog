@@ -1,8 +1,9 @@
-<div class="container">
+<div class="container" class="col-md-12 col-sm-12 col-xs-12"  >
     <div class="row" >
-      <div class="col-md-8 col-sm-8 col-xs-8" id="posts_list"><%= render @posts %>
+      <div class="col-md-8 col-sm-12 col-xs-12" id="posts_list">
+        <%= render @posts %>
       </div>
-      <div class="col-md-4 col-sm-4 col-xs-4">
+      <div class="col-md-4 col-sm-12 col-xs-12">
         <div class="panel panel-default">
           <div class="panel-heading">
             <h4 class="text-center"><%= t('Recommended for reading') %></h4>
@@ -12,7 +13,7 @@
                 <li class="list-group-item"><%= link_to (post.title), post %></li>
               </ul>
               <% end %>
-        </div>
+      </div>
 
       <div class="text-center">
         <button class="btn btn-info btn-lg" data-toggle="modal" data-target="#newPost">
@@ -35,6 +36,6 @@
         </div>
       </div>
     </div>
-  <div class="text-center"><%= will_paginate @posts %></div>
+  <div class="text-center" id="pagination-tab"><%= will_paginate @posts %></div>
 </div>
 
