@@ -13,6 +13,9 @@
 
   <body>
   <%= render partial: 'shared/navbar' %>
+      <div class="text-center">
+        <div  id="nav-flash"><a><%= render partial: 'shared/flash_messages', flash: flash %></a></div>
+      </div>
      <%= yield %>
   <%= render partial: 'shared/footer' %>
   </body>
